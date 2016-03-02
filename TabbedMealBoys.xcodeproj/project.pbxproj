@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EA7FA12CE0A4328ACEDD57C /* Pods_TabbedMealBoys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F060654B2700FF609B8E7502 /* Pods_TabbedMealBoys.framework */; };
 		990AB0C11C8609420046CA72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990AB0C01C8609420046CA72 /* AppDelegate.swift */; };
 		990AB0C31C8609420046CA72 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990AB0C21C8609420046CA72 /* FirstViewController.swift */; };
 		990AB0C51C8609420046CA72 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990AB0C41C8609420046CA72 /* SecondViewController.swift */; };
@@ -15,6 +16,8 @@
 		990AB0CD1C8609420046CA72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 990AB0CB1C8609420046CA72 /* LaunchScreen.storyboard */; };
 		990AB0D81C8609420046CA72 /* TabbedMealBoysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990AB0D71C8609420046CA72 /* TabbedMealBoysTests.swift */; };
 		990AB0E31C8609420046CA72 /* TabbedMealBoysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990AB0E21C8609420046CA72 /* TabbedMealBoysUITests.swift */; };
+		9983F5EA1C86273700C5DB2C /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9983F5E91C86273700C5DB2C /* TaskManager.swift */; };
+		9983F5EC1C862F8700C5DB2C /* NomAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9983F5EB1C862F8700C5DB2C /* NomAddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4915E47AD2D7E3AD840902A5 /* Pods-TabbedMealBoys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabbedMealBoys.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabbedMealBoys/Pods-TabbedMealBoys.debug.xcconfig"; sourceTree = "<group>"; };
+		590AE4310B48FA37AE330FD4 /* Pods-TabbedMealBoys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabbedMealBoys.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabbedMealBoys/Pods-TabbedMealBoys.release.xcconfig"; sourceTree = "<group>"; };
 		990AB0BD1C8609420046CA72 /* TabbedMealBoys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabbedMealBoys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		990AB0C01C8609420046CA72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		990AB0C21C8609420046CA72 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +54,9 @@
 		990AB0DE1C8609420046CA72 /* TabbedMealBoysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabbedMealBoysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		990AB0E21C8609420046CA72 /* TabbedMealBoysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedMealBoysUITests.swift; sourceTree = "<group>"; };
 		990AB0E41C8609420046CA72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9983F5E91C86273700C5DB2C /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		9983F5EB1C862F8700C5DB2C /* NomAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NomAddViewController.swift; sourceTree = "<group>"; };
+		F060654B2700FF609B8E7502 /* Pods_TabbedMealBoys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabbedMealBoys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EA7FA12CE0A4328ACEDD57C /* Pods_TabbedMealBoys.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F714E106F08EAA719A63842 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F060654B2700FF609B8E7502 /* Pods_TabbedMealBoys.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		990AB0B41C8609420046CA72 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +100,8 @@
 				990AB0D61C8609420046CA72 /* TabbedMealBoysTests */,
 				990AB0E11C8609420046CA72 /* TabbedMealBoysUITests */,
 				990AB0BE1C8609420046CA72 /* Products */,
+				9C13136398D91837B9EFF13E /* Pods */,
+				1F714E106F08EAA719A63842 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,10 +121,12 @@
 				990AB0C01C8609420046CA72 /* AppDelegate.swift */,
 				990AB0C21C8609420046CA72 /* FirstViewController.swift */,
 				990AB0C41C8609420046CA72 /* SecondViewController.swift */,
+				9983F5EB1C862F8700C5DB2C /* NomAddViewController.swift */,
 				990AB0C61C8609420046CA72 /* Main.storyboard */,
 				990AB0C91C8609420046CA72 /* Assets.xcassets */,
 				990AB0CB1C8609420046CA72 /* LaunchScreen.storyboard */,
 				990AB0CE1C8609420046CA72 /* Info.plist */,
+				9983F5E91C86273700C5DB2C /* TaskManager.swift */,
 			);
 			path = TabbedMealBoys;
 			sourceTree = "<group>";
@@ -128,6 +149,15 @@
 			path = TabbedMealBoysUITests;
 			sourceTree = "<group>";
 		};
+		9C13136398D91837B9EFF13E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4915E47AD2D7E3AD840902A5 /* Pods-TabbedMealBoys.debug.xcconfig */,
+				590AE4310B48FA37AE330FD4 /* Pods-TabbedMealBoys.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 990AB0E71C8609420046CA72 /* Build configuration list for PBXNativeTarget "TabbedMealBoys" */;
 			buildPhases = (
+				6486AF993A3C627180BFFD4C /* Check Pods Manifest.lock */,
 				990AB0B91C8609420046CA72 /* Sources */,
 				990AB0BA1C8609420046CA72 /* Frameworks */,
 				990AB0BB1C8609420046CA72 /* Resources */,
+				092B5E18AC5B488BAB4DF9FD /* Embed Pods Frameworks */,
+				9022A97842AE452AD7CFFD30 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +287,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		092B5E18AC5B488BAB4DF9FD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabbedMealBoys/Pods-TabbedMealBoys-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6486AF993A3C627180BFFD4C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9022A97842AE452AD7CFFD30 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabbedMealBoys/Pods-TabbedMealBoys-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		990AB0B91C8609420046CA72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,7 +342,9 @@
 			files = (
 				990AB0C51C8609420046CA72 /* SecondViewController.swift in Sources */,
 				990AB0C11C8609420046CA72 /* AppDelegate.swift in Sources */,
+				9983F5EA1C86273700C5DB2C /* TaskManager.swift in Sources */,
 				990AB0C31C8609420046CA72 /* FirstViewController.swift in Sources */,
+				9983F5EC1C862F8700C5DB2C /* NomAddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +482,7 @@
 		};
 		990AB0E81C8609420046CA72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4915E47AD2D7E3AD840902A5 /* Pods-TabbedMealBoys.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TabbedMealBoys/Info.plist;
@@ -410,6 +494,7 @@
 		};
 		990AB0E91C8609420046CA72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 590AE4310B48FA37AE330FD4 /* Pods-TabbedMealBoys.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TabbedMealBoys/Info.plist;
@@ -486,6 +571,7 @@
 				990AB0E91C8609420046CA72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		990AB0EA1C8609420046CA72 /* Build configuration list for PBXNativeTarget "TabbedMealBoysTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +580,7 @@
 				990AB0EC1C8609420046CA72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		990AB0ED1C8609420046CA72 /* Build configuration list for PBXNativeTarget "TabbedMealBoysUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +589,7 @@
 				990AB0EF1C8609420046CA72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
