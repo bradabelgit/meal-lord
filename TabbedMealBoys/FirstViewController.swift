@@ -2,7 +2,7 @@ import UIKit
 import GaugeKit
 
 class FirstViewController: UIViewController {
-    //test
+
     @IBOutlet var proGauge: Gauge!
     @IBOutlet weak var proLabel: UILabel!
     @IBOutlet weak var fatGauge: Gauge!
