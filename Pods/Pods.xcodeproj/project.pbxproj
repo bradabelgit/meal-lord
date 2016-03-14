@@ -7,31 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09D93EFA894107FFB253D2995B81A840 /* GaugeKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FB548D1F4F28825F1DF73F28E5E45B64 /* GaugeKit.bundle */; };
-		1C6218A0A7987AB33F0F7A3D86D0D6D1 /* Pods-TabbedMealBoys-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAA4C1F5599DEE9C9FE3A8A70B053D91 /* Pods-TabbedMealBoys-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22144A61ABE2507ED567CB58EEB5B8EA /* Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8AC3CF0745A7D3F87509AB7111ED0F /* Gauge.swift */; };
-		22C3C1F7A969BBB6456BB46A956354BE /* Pods-TabbedMealBoys-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C735CC3CBFD3F62F3B174517CBC251 /* Pods-TabbedMealBoys-dummy.m */; };
-		3A86D02786AD0101EF5A0094DB288DB1 /* GaugeHalf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1233E03262FF1DB42FDA73B2BB3AE0CE /* GaugeHalf.swift */; };
-		6BB4EEEAA5BBC9DBA3F98D2C2CB897F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */; };
-		7A5E8EDC6B377F8D46EBA292E6488168 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
-		853FD59257E2DFD0D006C0DAEBA2D009 /* GaugeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCCF07686B7DF1BEE5E77642A9B9E29 /* GaugeKit-dummy.m */; };
-		8FF4267E80A7229490D365E526B931B0 /* GaugeKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6859D7E7992D1E54262D6B1B530DD3DD /* GaugeKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96F65403631B8CF3D5A02C9192A0F1E4 /* GaugeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92680F1D507DA700BEBA32C75929E7E /* GaugeLine.swift */; };
-		C92F55DF3867EDFD42ACEA44912D5D0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91413329813FA6FE5A78842159E69621 /* Foundation.framework */; };
-		CD3D54BD25D1A0609BB643339156884A /* CAShapeLayer+oval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81044F3982C212692119F28426AF7FAD /* CAShapeLayer+oval.swift */; };
-		DF0D633E2EA46B1775DAD3B53380F87C /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 572EDB92AB1F05E2D348B259EA1B130B /* Info.plist */; };
-		E20A69ADF2A866D868BD89D66F8F23B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E642B1A057ADA2ABEF90BE2417F349C1 /* QuartzCore.framework */; };
-		E7A24E164487408C42D482535B9CAD99 /* GaugeCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31233DD22880283E1BF70DC3923B9B0 /* GaugeCircle.swift */; };
-		FBBEA0562BCAF2CD38F51C8914859513 /* GaugeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 87DE706102224022D3BD7DFA47A5D03A /* GaugeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		038EDED52850DB977591E4C62B3CB09A /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4391AC52F72F6D7A4B06FEA142F455B /* HoshiTextField.swift */; };
+		05870BAC05C4840F0C4B5AE2C7B40BAD /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 11D57D34D3E348EDF71D24BBABDC2A4E /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D93EFA894107FFB253D2995B81A840 /* GaugeKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 776469B9829E84EB79A4A09683CBC9B6 /* GaugeKit.bundle */; };
+		1C1DA2EB499D1EA7BF78D16FFE0EDCE8 /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAFC668BF237A870F4F19C9462DE8936 /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22144A61ABE2507ED567CB58EEB5B8EA /* Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53ED4CED773B8646FC41395B71D3FAC /* Gauge.swift */; };
+		276A355B57152D9831D0F9B21138425C /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF71DD4DF3C780BF43AEAC6FEF0FF54 /* YokoTextField.swift */; };
+		29DDADA1B33112730FA7FBD503F6DDCD /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A56B26FBC74CE573D3DB5B4114AF19 /* ALView+PureLayout.m */; };
+		2C946673C9A24C3E376A4B72C5897F10 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = C2495F009E61EF4F842F95F310ECB201 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DAB210DF78A95B41083DB4B981C9C81 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0DBB78E8AF4D9C8916A59639F4FACE /* KaedeTextField.swift */; };
+		3A86D02786AD0101EF5A0094DB288DB1 /* GaugeHalf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692638206AB69B49D3503A06CDACFA1F /* GaugeHalf.swift */; };
+		424730E6BB5FBCED9F5AF984AD4DC337 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2DF6FCD2D18E5ACF45B26AAB816F7C /* JiroTextField.swift */; };
+		4ED1C83B0B0BBA6AE45D4777420FF18B /* SwiftyCustomContentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE0812B76F546556D7057ECAA57EBEB /* SwiftyCustomContentButton.swift */; };
+		5713C34BCB7B7C3B46DD4A397A9C6558 /* SwiftyButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBBAB9627B25EB43B978010D83D2F29D /* SwiftyButton-dummy.m */; };
+		5991D5F2016649A97D59B185C610893E /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5AF1A7906ADCBA5572FE967B617ECC /* TextFieldsEffects.swift */; };
+		5ADD51DA3AEAEB58431846E75EAD8893 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1C3F73494ACA599F403C8D37DA7AA0 /* Foundation.framework */; };
+		5B3B019FA9944F4AFD50A7BDFD43B102 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FA6602121D0580E6265D04AC81BA6F /* MadokaTextField.swift */; };
+		67C8839AA4270B03DC87363D0C8DF9E0 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FB971E14FC7908A5DA1F9E44E642E1DB /* NSLayoutConstraint+PureLayout.m */; };
+		69FCD83FC7655C1937FB83F96DFCEA6D /* SwiftyButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE896CEAADCF9562D5CE5D17F25DE82 /* SwiftyButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BB4EEEAA5BBC9DBA3F98D2C2CB897F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F517EE85D0331280DE641CFD39F6D1 /* UIKit.framework */; };
+		6FECCBF7588A3C69D09E97BD4F3FB4B7 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20D2B024B29D4EFC8013B2EB06F358E /* IsaoTextField.swift */; };
+		72293F08A6A84AC455714527D0E90128 /* TextFieldEffects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF96F36E0C86E6C97997E73F5E457597 /* TextFieldEffects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75A517C6018148EA1530F34EB363A856 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1C3F73494ACA599F403C8D37DA7AA0 /* Foundation.framework */; };
+		7961F3D3FAC000D3FE5DBCC3E283D053 /* SwiftyButton+ResizableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72EFBCD256DDE3CC95B0E6F66CB8AAF /* SwiftyButton+ResizableImage.swift */; };
+		7A5E8EDC6B377F8D46EBA292E6488168 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1C3F73494ACA599F403C8D37DA7AA0 /* Foundation.framework */; };
+		8063E1F24653874FC3F89E58446EB445 /* SwiftyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF570B0E6C69F74D6A254D6527DB551 /* SwiftyButton.swift */; };
+		853FD59257E2DFD0D006C0DAEBA2D009 /* GaugeKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD6E4F141A8A2D3662269DADA555C62 /* GaugeKit-dummy.m */; };
+		8F1AECAB036323705E1964C34AD688C2 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4911D8A1A708F5CAAD8700914EF703 /* AkiraTextField.swift */; };
+		8FF4267E80A7229490D365E526B931B0 /* GaugeKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90EB6B545BE841261F932505D48F6E5B /* GaugeKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91B8C461106DCAC0CF58664984B6EF64 /* Pods-TabbedMealBoys-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C735CC3CBFD3F62F3B174517CBC251 /* Pods-TabbedMealBoys-dummy.m */; };
+		94E01473691392EB8285B0D2F3A695E3 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5692430FB0D96D4B42A0C0DFEE6B7E72 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96F65403631B8CF3D5A02C9192A0F1E4 /* GaugeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF78A0B844A33E5CBBDE3B7CC48FD5C /* GaugeLine.swift */; };
+		A0EAA22C1A0F6A726D8F27258332B236 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC3EE63125ECA03B345F526B9CF217A /* PureLayout.framework */; };
+		A435AE319B180BDDBEB86AE8B412F75E /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 938AD3F6119AC62A0E26C29388E1EB23 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA3E313BA6A6C4EF59DC3E247C25A184 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F517EE85D0331280DE641CFD39F6D1 /* UIKit.framework */; };
+		B5079A099C148188BA2257ECE9A0E392 /* TextFieldEffects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D436A6282683E05DE9AF43676A922B7 /* TextFieldEffects-dummy.m */; };
+		B7D7150A9FDC2C5B0FDB29E72B59C06C /* Pods-TabbedMealBoys-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAA4C1F5599DEE9C9FE3A8A70B053D91 /* Pods-TabbedMealBoys-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCFF482D127C7D86BB016411A74E0FD9 /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7662C75EA795720AF6C39FA4CB3FE3 /* PureLayout-dummy.m */; };
+		CD3D54BD25D1A0609BB643339156884A /* CAShapeLayer+oval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E635FDD2FC29DC75551BD5F7FEAE8A2 /* CAShapeLayer+oval.swift */; };
+		D078314FEA54C74CCEEC275A15765913 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1C3F73494ACA599F403C8D37DA7AA0 /* Foundation.framework */; };
+		D420A027ABE46CAB334E5AC4DE0FD46E /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = F0E1B3B626533B086898CE4CA9B6B225 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF0D633E2EA46B1775DAD3B53380F87C /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = F40A66B18F7B3E2818E951B805C125E4 /* Info.plist */; };
+		E20A69ADF2A866D868BD89D66F8F23B2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B235464CECBE7B723D865B50DA1D2B97 /* QuartzCore.framework */; };
+		E3BD6B97A125DA2AEC5C629421E993AC /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E1572CA5E157AB869DB502A97D4E60 /* YoshikoTextField.swift */; };
+		E62AA5F36FDCB552186B5BFD80FF79CA /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A954DAB4C048CE7CD47F423295478E58 /* MinoruTextField.swift */; };
+		E7A24E164487408C42D482535B9CAD99 /* GaugeCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568668C8E0E1E3F26BDA8F548CA32E2C /* GaugeCircle.swift */; };
+		E8940AE6BAD482730D7B6AF4CDAB8B25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1C3F73494ACA599F403C8D37DA7AA0 /* Foundation.framework */; };
+		FBBEA0562BCAF2CD38F51C8914859513 /* GaugeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 92A00AC432E3A8F4F5C1024A2BDC1EBF /* GaugeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE580E54F67B4A93C7EB4A8462B86104 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FC09F7475C18AD5C971454095F47CCFA /* NSArray+PureLayout.m */; };
+		FF26ADB4411D752A8D890F5124911BC7 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = F5F37EC911BA229439C0113B237770CA /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		00D490989D5FE811A4749578B902B2CB /* PBXContainerItemProxy */ = {
+		1AE5EF83AEB081C82E028C1BBC0FA423 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 122253C62F330ED922A7C46D47CF8DC2;
 			remoteInfo = GaugeKit;
+		};
+		5AAC7DC9D54E50FE391128364A5C4042 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5B4E15A57D082BBAF59E48A424E6AF3;
+			remoteInfo = TextFieldEffects;
+		};
+		98C7F4EC1CA746A04707F42A9E318FD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23D4DA446B8E65FDC5A2212A984B9A9A;
+			remoteInfo = SwiftyButton;
 		};
 		BCE3C900C71165D23D28B353AF7E3A0A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -40,42 +87,110 @@
 			remoteGlobalIDString = 0CC3AC85291D76DF4348A46011097C3C;
 			remoteInfo = "GaugeKit-GaugeKit";
 		};
+		C25CE90B1E1C7707B273F050EAF80496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77DC8A959F8CDD443B27B74B288B7259;
+			remoteInfo = PureLayout;
+		};
+		CDAC56565E8FE70C9B15CC1DA4B419B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77DC8A959F8CDD443B27B74B288B7259;
+			remoteInfo = PureLayout;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0431E881E876CA3FF911067139C9C8ED /* GaugeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GaugeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0560B06C15DA192263A819A40B8E25F1 /* Pods-TabbedMealBoys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TabbedMealBoys.debug.xcconfig"; sourceTree = "<group>"; };
-		1233E03262FF1DB42FDA73B2BB3AE0CE /* GaugeHalf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaugeHalf.swift; path = GaugeKit/GaugeHalf.swift; sourceTree = "<group>"; };
-		2ECCD4DE3A5EAF382DD58832E2C5E32C /* GaugeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GaugeKit.xcconfig; sourceTree = "<group>"; };
+		0ADAFA8F6C0AA7569F39B4BA97D71295 /* TextFieldEffects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TextFieldEffects.xcconfig; sourceTree = "<group>"; };
+		111E48589DDB79E3ADBCDC1D4AA00A16 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11D57D34D3E348EDF71D24BBABDC2A4E /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		197F0CAE9B43EE9865CBBD2B30B332C7 /* TextFieldEffects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-prefix.pch"; sourceTree = "<group>"; };
+		1CE8812DF056932FA04EBE000CD7C106 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		236C46C2071B96E88E2C21404238591E /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PureLayout.modulemap; sourceTree = "<group>"; };
 		31C735CC3CBFD3F62F3B174517CBC251 /* Pods-TabbedMealBoys-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TabbedMealBoys-dummy.m"; sourceTree = "<group>"; };
+		32FA6602121D0580E6265D04AC81BA6F /* MadokaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MadokaTextField.swift; path = TextFieldEffects/TextFieldEffects/MadokaTextField.swift; sourceTree = "<group>"; };
+		337BEDA748C5699E8460BF1A8BC8FE7D /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		35E1572CA5E157AB869DB502A97D4E60 /* YoshikoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YoshikoTextField.swift; path = TextFieldEffects/TextFieldEffects/YoshikoTextField.swift; sourceTree = "<group>"; };
+		3AF570B0E6C69F74D6A254D6527DB551 /* SwiftyButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyButton.swift; path = SwiftyButton/SwiftyButton.swift; sourceTree = "<group>"; };
+		3D0DBB78E8AF4D9C8916A59639F4FACE /* KaedeTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KaedeTextField.swift; path = TextFieldEffects/TextFieldEffects/KaedeTextField.swift; sourceTree = "<group>"; };
+		3DE896CEAADCF9562D5CE5D17F25DE82 /* SwiftyButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-umbrella.h"; sourceTree = "<group>"; };
+		4766E045000E06E40C9C6813FA42C643 /* SwiftyButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyButton.xcconfig; sourceTree = "<group>"; };
+		4CC3EE63125ECA03B345F526B9CF217A /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50299D54F3F47E370979453B26C95AD0 /* Pods-TabbedMealBoys-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TabbedMealBoys-resources.sh"; sourceTree = "<group>"; };
 		51DF2CB3875875556C7C32E8D73AB26E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		572EDB92AB1F05E2D348B259EA1B130B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = GaugeKit/Info.plist; sourceTree = "<group>"; };
+		568668C8E0E1E3F26BDA8F548CA32E2C /* GaugeCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaugeCircle.swift; path = GaugeKit/GaugeCircle.swift; sourceTree = "<group>"; };
+		5692430FB0D96D4B42A0C0DFEE6B7E72 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		5EF78A0B844A33E5CBBDE3B7CC48FD5C /* GaugeLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaugeLine.swift; path = GaugeKit/GaugeLine.swift; sourceTree = "<group>"; };
 		5F6066D20BDAE18006EF16705DF90FAB /* Pods-TabbedMealBoys.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TabbedMealBoys.modulemap"; sourceTree = "<group>"; };
-		6859D7E7992D1E54262D6B1B530DD3DD /* GaugeKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GaugeKit-umbrella.h"; sourceTree = "<group>"; };
-		7F53AC15AC63E2B337F2C53DCDCB0257 /* Pods_TabbedMealBoys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabbedMealBoys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		81044F3982C212692119F28426AF7FAD /* CAShapeLayer+oval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAShapeLayer+oval.swift"; path = "GaugeKit/CAShapeLayer+oval.swift"; sourceTree = "<group>"; };
-		87DE706102224022D3BD7DFA47A5D03A /* GaugeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GaugeKit.h; path = GaugeKit/GaugeKit.h; sourceTree = "<group>"; };
-		904CC1B476C94C07FF9A0FD9289BC1D0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91413329813FA6FE5A78842159E69621 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		9170463BAA252E21F5B0126336B13DE0 /* GaugeKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GaugeKit.modulemap; sourceTree = "<group>"; };
-		A31233DD22880283E1BF70DC3923B9B0 /* GaugeCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaugeCircle.swift; path = GaugeKit/GaugeCircle.swift; sourceTree = "<group>"; };
-		AC8AC3CF0745A7D3F87509AB7111ED0F /* Gauge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gauge.swift; path = GaugeKit/Gauge.swift; sourceTree = "<group>"; };
+		5F9FAC4E2118869F5E324F2883E798CA /* Pods_TabbedMealBoys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabbedMealBoys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		655F3AE5E718C3219C7C9E07DB54480B /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		692638206AB69B49D3503A06CDACFA1F /* GaugeHalf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaugeHalf.swift; path = GaugeKit/GaugeHalf.swift; sourceTree = "<group>"; };
+		6A7662C75EA795720AF6C39FA4CB3FE3 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
+		6F5AF1A7906ADCBA5572FE967B617ECC /* TextFieldsEffects.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldsEffects.swift; path = TextFieldEffects/TextFieldEffects/TextFieldsEffects.swift; sourceTree = "<group>"; };
+		70760766B82534417E59564BF42CFFF7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71823FC60486CC2EF7A910BF7C9CF4D9 /* GaugeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GaugeKit-prefix.pch"; sourceTree = "<group>"; };
+		764F512D56C76583C2F46B2CC913BDB9 /* GaugeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GaugeKit.xcconfig; sourceTree = "<group>"; };
+		776469B9829E84EB79A4A09683CBC9B6 /* GaugeKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaugeKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D436A6282683E05DE9AF43676A922B7 /* TextFieldEffects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TextFieldEffects-dummy.m"; sourceTree = "<group>"; };
+		8E635FDD2FC29DC75551BD5F7FEAE8A2 /* CAShapeLayer+oval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAShapeLayer+oval.swift"; path = "GaugeKit/CAShapeLayer+oval.swift"; sourceTree = "<group>"; };
+		905C037987A373C9C7062F067BDE7EC2 /* SwiftyButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90EB6B545BE841261F932505D48F6E5B /* GaugeKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GaugeKit-umbrella.h"; sourceTree = "<group>"; };
+		92A00AC432E3A8F4F5C1024A2BDC1EBF /* GaugeKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GaugeKit.h; path = GaugeKit/GaugeKit.h; sourceTree = "<group>"; };
+		938AD3F6119AC62A0E26C29388E1EB23 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
+		9856E2D2C241B538693A9DB6EE1AC2E5 /* SwiftyButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-prefix.pch"; sourceTree = "<group>"; };
+		99E4EAE6738E82064ED7EA7D9B748CC9 /* SwiftyButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyButton.modulemap; sourceTree = "<group>"; };
+		9D2DF6FCD2D18E5ACF45B26AAB816F7C /* JiroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JiroTextField.swift; path = TextFieldEffects/TextFieldEffects/JiroTextField.swift; sourceTree = "<group>"; };
+		9F5FF4D02C7C0CCC838F3687F4AA2024 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A954DAB4C048CE7CD47F423295478E58 /* MinoruTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinoruTextField.swift; path = TextFieldEffects/TextFieldEffects/MinoruTextField.swift; sourceTree = "<group>"; };
+		B235464CECBE7B723D865B50DA1D2B97 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C1005468ADC8FB9CF39CAD517AB88AF6 /* GaugeKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = GaugeKit.modulemap; sourceTree = "<group>"; };
+		C2495F009E61EF4F842F95F310ECB201 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		C28F9DF706C90B145DF7429FA7762AA2 /* TextFieldEffects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TextFieldEffects.modulemap; sourceTree = "<group>"; };
+		C53ED4CED773B8646FC41395B71D3FAC /* Gauge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gauge.swift; path = GaugeKit/Gauge.swift; sourceTree = "<group>"; };
+		C5A56B26FBC74CE573D3DB5B4114AF19 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
 		C6EA95FC6E29C73DE2CCF76E8CE0C030 /* Pods-TabbedMealBoys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TabbedMealBoys.release.xcconfig"; sourceTree = "<group>"; };
-		CA2DFE3FF5A17F7F308BB5B3B57B3D9F /* GaugeKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GaugeKit-prefix.pch"; sourceTree = "<group>"; };
-		CDCCF07686B7DF1BEE5E77642A9B9E29 /* GaugeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GaugeKit-dummy.m"; sourceTree = "<group>"; };
+		D0B30BADFCD7F987CB29756A4208A14A /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1712E482E58FAB07305D45C19B1DC64 /* Pods-TabbedMealBoys-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TabbedMealBoys-acknowledgements.plist"; sourceTree = "<group>"; };
 		D1A76F57DC50335EAAADAC5E9F4077BD /* Pods-TabbedMealBoys-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TabbedMealBoys-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D20D2B024B29D4EFC8013B2EB06F358E /* IsaoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IsaoTextField.swift; path = TextFieldEffects/TextFieldEffects/IsaoTextField.swift; sourceTree = "<group>"; };
+		D4391AC52F72F6D7A4B06FEA142F455B /* HoshiTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HoshiTextField.swift; path = TextFieldEffects/TextFieldEffects/HoshiTextField.swift; sourceTree = "<group>"; };
 		E0B7B74A6C9F7D9C82FB9219C3FF8AE5 /* Pods-TabbedMealBoys-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TabbedMealBoys-frameworks.sh"; sourceTree = "<group>"; };
-		E642B1A057ADA2ABEF90BE2417F349C1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		E92680F1D507DA700BEBA32C75929E7E /* GaugeLine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GaugeLine.swift; path = GaugeKit/GaugeLine.swift; sourceTree = "<group>"; };
-		F019CEE34C49D18B6785679BE923F219 /* GaugeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GaugeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E72EFBCD256DDE3CC95B0E6F66CB8AAF /* SwiftyButton+ResizableImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyButton+ResizableImage.swift"; path = "SwiftyButton/SwiftyButton+ResizableImage.swift"; sourceTree = "<group>"; };
+		E7F517EE85D0331280DE641CFD39F6D1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EBBAB9627B25EB43B978010D83D2F29D /* SwiftyButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyButton-dummy.m"; sourceTree = "<group>"; };
+		EBE0812B76F546556D7057ECAA57EBEB /* SwiftyCustomContentButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCustomContentButton.swift; path = SwiftyButton/SwiftyCustomContentButton.swift; sourceTree = "<group>"; };
+		EC1C3F73494ACA599F403C8D37DA7AA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EF4911D8A1A708F5CAAD8700914EF703 /* AkiraTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AkiraTextField.swift; path = TextFieldEffects/TextFieldEffects/AkiraTextField.swift; sourceTree = "<group>"; };
+		F0E1B3B626533B086898CE4CA9B6B225 /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		F40A66B18F7B3E2818E951B805C125E4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = GaugeKit/Info.plist; sourceTree = "<group>"; };
+		F5F37EC911BA229439C0113B237770CA /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		F87906EE795CA0C1D1B8755C3DCCBA44 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
 		FAA4C1F5599DEE9C9FE3A8A70B053D91 /* Pods-TabbedMealBoys-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TabbedMealBoys-umbrella.h"; sourceTree = "<group>"; };
-		FB548D1F4F28825F1DF73F28E5E45B64 /* GaugeKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaugeKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFC668BF237A870F4F19C9462DE8936 /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
+		FB971E14FC7908A5DA1F9E44E642E1DB /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		FC09F7475C18AD5C971454095F47CCFA /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		FCF71DD4DF3C780BF43AEAC6FEF0FF54 /* YokoTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YokoTextField.swift; path = TextFieldEffects/TextFieldEffects/YokoTextField.swift; sourceTree = "<group>"; };
+		FDD6E4F141A8A2D3662269DADA555C62 /* GaugeKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GaugeKit-dummy.m"; sourceTree = "<group>"; };
+		FF96F36E0C86E6C97997E73F5E457597 /* TextFieldEffects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TextFieldEffects-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0CBF04A8C201C6280039B87FACFA8B40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8940AE6BAD482730D7B6AF4CDAB8B25 /* Foundation.framework in Frameworks */,
+				A0EAA22C1A0F6A726D8F27258332B236 /* PureLayout.framework in Frameworks */,
+				AA3E313BA6A6C4EF59DC3E247C25A184 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1A961071EAC3E4620606E2224AC585FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,11 +198,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		33132DDE7B5AE552C64CC9161486F273 /* Frameworks */ = {
+		392681E9FB2FF6E898FB3D711AE43BB0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C92F55DF3867EDFD42ACEA44912D5D0D /* Foundation.framework in Frameworks */,
+				5ADD51DA3AEAEB58431846E75EAD8893 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,25 +216,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1A7E6894E5BF985C1C53CD8593B201F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75A517C6018148EA1530F34EB363A856 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E77AE231D248940F7DA0A6AA17C9A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D078314FEA54C74CCEEC275A15765913 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+		1FFC3625194CBA3C8E2AE9CCF302395E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DA23025FEDA7F7FE2AACB2532BD80D14 /* iOS */,
+				1CE8812DF056932FA04EBE000CD7C106 /* Info.plist */,
+				236C46C2071B96E88E2C21404238591E /* PureLayout.modulemap */,
+				F87906EE795CA0C1D1B8755C3DCCBA44 /* PureLayout.xcconfig */,
+				6A7662C75EA795720AF6C39FA4CB3FE3 /* PureLayout-dummy.m */,
+				337BEDA748C5699E8460BF1A8BC8FE7D /* PureLayout-prefix.pch */,
+				FAFC668BF237A870F4F19C9462DE8936 /* PureLayout-umbrella.h */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		26C8F3C2D0349357EFC0D74001C42864 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FB548D1F4F28825F1DF73F28E5E45B64 /* GaugeKit.bundle */,
-				F019CEE34C49D18B6785679BE923F219 /* GaugeKit.framework */,
-				7F53AC15AC63E2B337F2C53DCDCB0257 /* Pods_TabbedMealBoys.framework */,
-			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
 			sourceTree = "<group>";
 		};
 		2CBC4EF43BC8BF1A74BD848BCD377DE5 /* Pods-TabbedMealBoys */ = {
@@ -140,23 +267,113 @@
 			path = "Target Support Files/Pods-TabbedMealBoys";
 			sourceTree = "<group>";
 		};
-		2CCA6CE1A57C86A5B6738151150C30F1 /* Pods */ = {
+		3374DE04C48A1E59BAE51D964AB2E001 /* TextFieldEffects */ = {
 			isa = PBXGroup;
 			children = (
-				B561497D40AAAD2A1E9CF94C8640CC12 /* GaugeKit */,
+				EF4911D8A1A708F5CAAD8700914EF703 /* AkiraTextField.swift */,
+				D4391AC52F72F6D7A4B06FEA142F455B /* HoshiTextField.swift */,
+				D20D2B024B29D4EFC8013B2EB06F358E /* IsaoTextField.swift */,
+				9D2DF6FCD2D18E5ACF45B26AAB816F7C /* JiroTextField.swift */,
+				3D0DBB78E8AF4D9C8916A59639F4FACE /* KaedeTextField.swift */,
+				32FA6602121D0580E6265D04AC81BA6F /* MadokaTextField.swift */,
+				A954DAB4C048CE7CD47F423295478E58 /* MinoruTextField.swift */,
+				6F5AF1A7906ADCBA5572FE967B617ECC /* TextFieldsEffects.swift */,
+				FCF71DD4DF3C780BF43AEAC6FEF0FF54 /* YokoTextField.swift */,
+				35E1572CA5E157AB869DB502A97D4E60 /* YoshikoTextField.swift */,
+				A21356E0176AEF35A1D84FCC411562FE /* Support Files */,
+			);
+			path = TextFieldEffects;
+			sourceTree = "<group>";
+		};
+		3D2AE8C859F3E2BB638E2F338D6E8AB6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1005468ADC8FB9CF39CAD517AB88AF6 /* GaugeKit.modulemap */,
+				764F512D56C76583C2F46B2CC913BDB9 /* GaugeKit.xcconfig */,
+				FDD6E4F141A8A2D3662269DADA555C62 /* GaugeKit-dummy.m */,
+				71823FC60486CC2EF7A910BF7C9CF4D9 /* GaugeKit-prefix.pch */,
+				90EB6B545BE841261F932505D48F6E5B /* GaugeKit-umbrella.h */,
+				111E48589DDB79E3ADBCDC1D4AA00A16 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GaugeKit";
+			sourceTree = "<group>";
+		};
+		457C6D5F07C08247B46389FE99FB3103 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C844A70D76EBE477F9F973BB248E5FC3 /* GaugeKit */,
+				B662E3D3005FD70B548120DE951108F8 /* PureLayout */,
+				96C85BA11C245E2896B0309BE214BDCC /* SwiftyButton */,
+				3374DE04C48A1E59BAE51D964AB2E001 /* TextFieldEffects */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		62FC861BCED20A8FB7CB4F6BB9068E9F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F5FF4D02C7C0CCC838F3687F4AA2024 /* Info.plist */,
+				99E4EAE6738E82064ED7EA7D9B748CC9 /* SwiftyButton.modulemap */,
+				4766E045000E06E40C9C6813FA42C643 /* SwiftyButton.xcconfig */,
+				EBBAB9627B25EB43B978010D83D2F29D /* SwiftyButton-dummy.m */,
+				9856E2D2C241B538693A9DB6EE1AC2E5 /* SwiftyButton-prefix.pch */,
+				3DE896CEAADCF9562D5CE5D17F25DE82 /* SwiftyButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyButton";
+			sourceTree = "<group>";
+		};
+		69D78CA24DC4EC70B8759272BF096D1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CC3EE63125ECA03B345F526B9CF217A /* PureLayout.framework */,
+				C7CEE4F10843824B2C816026897C2BEB /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A5B9B201FE1C58A9B4752ACA60859E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				776469B9829E84EB79A4A09683CBC9B6 /* GaugeKit.bundle */,
+				0431E881E876CA3FF911067139C9C8ED /* GaugeKit.framework */,
+				5F9FAC4E2118869F5E324F2883E798CA /* Pods_TabbedMealBoys.framework */,
+				D0B30BADFCD7F987CB29756A4208A14A /* PureLayout.framework */,
+				905C037987A373C9C7062F067BDE7EC2 /* SwiftyButton.framework */,
+				655F3AE5E718C3219C7C9E07DB54480B /* TextFieldEffects.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BF764458B95CF46899613909584DF0B /* CustomContent */ = {
+			isa = PBXGroup;
+			children = (
+				EBE0812B76F546556D7057ECAA57EBEB /* SwiftyCustomContentButton.swift */,
+			);
+			name = CustomContent;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				2CCA6CE1A57C86A5B6738151150C30F1 /* Pods */,
-				26C8F3C2D0349357EFC0D74001C42864 /* Products */,
+				69D78CA24DC4EC70B8759272BF096D1E /* Frameworks */,
+				457C6D5F07C08247B46389FE99FB3103 /* Pods */,
+				6A5B9B201FE1C58A9B4752ACA60859E4 /* Products */,
 				A031A40AB839B193C6874B68F439810A /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		96C85BA11C245E2896B0309BE214BDCC /* SwiftyButton */ = {
+			isa = PBXGroup;
+			children = (
+				3AF570B0E6C69F74D6A254D6527DB551 /* SwiftyButton.swift */,
+				E72EFBCD256DDE3CC95B0E6F66CB8AAF /* SwiftyButton+ResizableImage.swift */,
+				7BF764458B95CF46899613909584DF0B /* CustomContent */,
+				62FC861BCED20A8FB7CB4F6BB9068E9F /* Support Files */,
+			);
+			path = SwiftyButton;
 			sourceTree = "<group>";
 		};
 		A031A40AB839B193C6874B68F439810A /* Targets Support Files */ = {
@@ -167,53 +384,92 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B561497D40AAAD2A1E9CF94C8640CC12 /* GaugeKit */ = {
+		A21356E0176AEF35A1D84FCC411562FE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				81044F3982C212692119F28426AF7FAD /* CAShapeLayer+oval.swift */,
-				AC8AC3CF0745A7D3F87509AB7111ED0F /* Gauge.swift */,
-				A31233DD22880283E1BF70DC3923B9B0 /* GaugeCircle.swift */,
-				1233E03262FF1DB42FDA73B2BB3AE0CE /* GaugeHalf.swift */,
-				87DE706102224022D3BD7DFA47A5D03A /* GaugeKit.h */,
-				E92680F1D507DA700BEBA32C75929E7E /* GaugeLine.swift */,
-				572EDB92AB1F05E2D348B259EA1B130B /* Info.plist */,
-				CCF99F778347C4F0F13A3DD56BA055E2 /* Support Files */,
-			);
-			path = GaugeKit;
-			sourceTree = "<group>";
-		};
-		CCF99F778347C4F0F13A3DD56BA055E2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9170463BAA252E21F5B0126336B13DE0 /* GaugeKit.modulemap */,
-				2ECCD4DE3A5EAF382DD58832E2C5E32C /* GaugeKit.xcconfig */,
-				CDCCF07686B7DF1BEE5E77642A9B9E29 /* GaugeKit-dummy.m */,
-				CA2DFE3FF5A17F7F308BB5B3B57B3D9F /* GaugeKit-prefix.pch */,
-				6859D7E7992D1E54262D6B1B530DD3DD /* GaugeKit-umbrella.h */,
-				904CC1B476C94C07FF9A0FD9289BC1D0 /* Info.plist */,
+				70760766B82534417E59564BF42CFFF7 /* Info.plist */,
+				C28F9DF706C90B145DF7429FA7762AA2 /* TextFieldEffects.modulemap */,
+				0ADAFA8F6C0AA7569F39B4BA97D71295 /* TextFieldEffects.xcconfig */,
+				8D436A6282683E05DE9AF43676A922B7 /* TextFieldEffects-dummy.m */,
+				197F0CAE9B43EE9865CBBD2B30B332C7 /* TextFieldEffects-prefix.pch */,
+				FF96F36E0C86E6C97997E73F5E457597 /* TextFieldEffects-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/GaugeKit";
+			path = "../Target Support Files/TextFieldEffects";
 			sourceTree = "<group>";
 		};
-		DA23025FEDA7F7FE2AACB2532BD80D14 /* iOS */ = {
+		B662E3D3005FD70B548120DE951108F8 /* PureLayout */ = {
 			isa = PBXGroup;
 			children = (
-				91413329813FA6FE5A78842159E69621 /* Foundation.framework */,
-				E642B1A057ADA2ABEF90BE2417F349C1 /* QuartzCore.framework */,
-				D9DE615671731BF3AEFB3CB1F984FA8F /* UIKit.framework */,
+				5692430FB0D96D4B42A0C0DFEE6B7E72 /* ALView+PureLayout.h */,
+				C5A56B26FBC74CE573D3DB5B4114AF19 /* ALView+PureLayout.m */,
+				C2495F009E61EF4F842F95F310ECB201 /* NSArray+PureLayout.h */,
+				FC09F7475C18AD5C971454095F47CCFA /* NSArray+PureLayout.m */,
+				F5F37EC911BA229439C0113B237770CA /* NSLayoutConstraint+PureLayout.h */,
+				FB971E14FC7908A5DA1F9E44E642E1DB /* NSLayoutConstraint+PureLayout.m */,
+				938AD3F6119AC62A0E26C29388E1EB23 /* PureLayout.h */,
+				11D57D34D3E348EDF71D24BBABDC2A4E /* PureLayout+Internal.h */,
+				F0E1B3B626533B086898CE4CA9B6B225 /* PureLayoutDefines.h */,
+				1FFC3625194CBA3C8E2AE9CCF302395E /* Support Files */,
+			);
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+		C7CEE4F10843824B2C816026897C2BEB /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EC1C3F73494ACA599F403C8D37DA7AA0 /* Foundation.framework */,
+				B235464CECBE7B723D865B50DA1D2B97 /* QuartzCore.framework */,
+				E7F517EE85D0331280DE641CFD39F6D1 /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		C844A70D76EBE477F9F973BB248E5FC3 /* GaugeKit */ = {
+			isa = PBXGroup;
+			children = (
+				8E635FDD2FC29DC75551BD5F7FEAE8A2 /* CAShapeLayer+oval.swift */,
+				C53ED4CED773B8646FC41395B71D3FAC /* Gauge.swift */,
+				568668C8E0E1E3F26BDA8F548CA32E2C /* GaugeCircle.swift */,
+				692638206AB69B49D3503A06CDACFA1F /* GaugeHalf.swift */,
+				92A00AC432E3A8F4F5C1024A2BDC1EBF /* GaugeKit.h */,
+				5EF78A0B844A33E5CBBDE3B7CC48FD5C /* GaugeLine.swift */,
+				F40A66B18F7B3E2818E951B805C125E4 /* Info.plist */,
+				3D2AE8C859F3E2BB638E2F338D6E8AB6 /* Support Files */,
+			);
+			path = GaugeKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3E112224F324CF629EE3DC680D62CAC2 /* Headers */ = {
+		48D00FCBEEE106B0D04B0DB1E1D0DBA9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C6218A0A7987AB33F0F7A3D86D0D6D1 /* Pods-TabbedMealBoys-umbrella.h in Headers */,
+				69FCD83FC7655C1937FB83F96DFCEA6D /* SwiftyButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ABB0D09AEA9286E38317A48F9C66E6E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7D7150A9FDC2C5B0FDB29E72B59C06C /* Pods-TabbedMealBoys-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E4B45C591DE8056E74F034FAE9D7044 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94E01473691392EB8285B0D2F3A695E3 /* ALView+PureLayout.h in Headers */,
+				2C946673C9A24C3E376A4B72C5897F10 /* NSArray+PureLayout.h in Headers */,
+				FF26ADB4411D752A8D890F5124911BC7 /* NSLayoutConstraint+PureLayout.h in Headers */,
+				05870BAC05C4840F0C4B5AE2C7B40BAD /* PureLayout+Internal.h in Headers */,
+				1C1DA2EB499D1EA7BF78D16FFE0EDCE8 /* PureLayout-umbrella.h in Headers */,
+				A435AE319B180BDDBEB86AE8B412F75E /* PureLayout.h in Headers */,
+				D420A027ABE46CAB334E5AC4DE0FD46E /* PureLayoutDefines.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +479,14 @@
 			files = (
 				8FF4267E80A7229490D365E526B931B0 /* GaugeKit-umbrella.h in Headers */,
 				FBBEA0562BCAF2CD38F51C8914859513 /* GaugeKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E4C8E99F7043BBB544195D46B33534 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72293F08A6A84AC455714527D0E90128 /* TextFieldEffects-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +507,7 @@
 			);
 			name = "GaugeKit-GaugeKit";
 			productName = "GaugeKit-GaugeKit";
-			productReference = FB548D1F4F28825F1DF73F28E5E45B64 /* GaugeKit.bundle */;
+			productReference = 776469B9829E84EB79A4A09683CBC9B6 /* GaugeKit.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		122253C62F330ED922A7C46D47CF8DC2 /* GaugeKit */ = {
@@ -262,25 +526,80 @@
 			);
 			name = GaugeKit;
 			productName = GaugeKit;
-			productReference = F019CEE34C49D18B6785679BE923F219 /* GaugeKit.framework */;
+			productReference = 0431E881E876CA3FF911067139C9C8ED /* GaugeKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F7140FC9F6D13D61CBAFD39E13896470 /* Pods-TabbedMealBoys */ = {
+		23D4DA446B8E65FDC5A2212A984B9A9A /* SwiftyButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4AB1052456A4A274201096D07ED7C3A7 /* Build configuration list for PBXNativeTarget "Pods-TabbedMealBoys" */;
+			buildConfigurationList = A868EB20DF460B07EC2FD1D84250266B /* Build configuration list for PBXNativeTarget "SwiftyButton" */;
 			buildPhases = (
-				A7FAF838E2299B76C58F09B9E27919EB /* Sources */,
-				33132DDE7B5AE552C64CC9161486F273 /* Frameworks */,
-				3E112224F324CF629EE3DC680D62CAC2 /* Headers */,
+				16DB7C1CC612DF8181FC9B0AF7F1B45D /* Sources */,
+				0CBF04A8C201C6280039B87FACFA8B40 /* Frameworks */,
+				48D00FCBEEE106B0D04B0DB1E1D0DBA9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				50740F6BCDF72769AA9AD33C2DFA8D34 /* PBXTargetDependency */,
+				9699F2CEC8F9D4B875AE9B97C1B9D08D /* PBXTargetDependency */,
+			);
+			name = SwiftyButton;
+			productName = SwiftyButton;
+			productReference = 905C037987A373C9C7062F067BDE7EC2 /* SwiftyButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4F3F881660B75833B9C11C3D92B329D3 /* Pods-TabbedMealBoys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E361B9186018820496395B1EF2C35DA /* Build configuration list for PBXNativeTarget "Pods-TabbedMealBoys" */;
+			buildPhases = (
+				7A697AA27372F96B246EBE49B50D2514 /* Sources */,
+				A1A7E6894E5BF985C1C53CD8593B201F /* Frameworks */,
+				8ABB0D09AEA9286E38317A48F9C66E6E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B4CBBE2BFAA7DAF0045197B7CE0D60F /* PBXTargetDependency */,
+				25B63702E6F80FB247F5620F31406A49 /* PBXTargetDependency */,
+				A739E33E16750468AB8ADBA119B57106 /* PBXTargetDependency */,
+				C60D9E71EAF4D1FDB6E607CBF7CA632D /* PBXTargetDependency */,
 			);
 			name = "Pods-TabbedMealBoys";
 			productName = "Pods-TabbedMealBoys";
-			productReference = 7F53AC15AC63E2B337F2C53DCDCB0257 /* Pods_TabbedMealBoys.framework */;
+			productReference = 5F9FAC4E2118869F5E324F2883E798CA /* Pods_TabbedMealBoys.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		77DC8A959F8CDD443B27B74B288B7259 /* PureLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9DEE6B8BD9A03C9D329B54E5D9EBD48 /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildPhases = (
+				F4F734600FCBF3BAB84FC3329FE8FC1B /* Sources */,
+				A8E77AE231D248940F7DA0A6AA17C9A8 /* Frameworks */,
+				9E4B45C591DE8056E74F034FAE9D7044 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PureLayout;
+			productName = PureLayout;
+			productReference = D0B30BADFCD7F987CB29756A4208A14A /* PureLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D5B4E15A57D082BBAF59E48A424E6AF3 /* TextFieldEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB8FF49249E145038734F0A8D5D90E54 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */;
+			buildPhases = (
+				71A60F891F138B2A703C63E4D5C4FB9C /* Sources */,
+				392681E9FB2FF6E898FB3D711AE43BB0 /* Frameworks */,
+				D2E4C8E99F7043BBB544195D46B33534 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldEffects;
+			productName = TextFieldEffects;
+			productReference = 655F3AE5E718C3219C7C9E07DB54480B /* TextFieldEffects.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -300,13 +619,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 26C8F3C2D0349357EFC0D74001C42864 /* Products */;
+			productRefGroup = 6A5B9B201FE1C58A9B4752ACA60859E4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				122253C62F330ED922A7C46D47CF8DC2 /* GaugeKit */,
 				0CC3AC85291D76DF4348A46011097C3C /* GaugeKit-GaugeKit */,
-				F7140FC9F6D13D61CBAFD39E13896470 /* Pods-TabbedMealBoys */,
+				4F3F881660B75833B9C11C3D92B329D3 /* Pods-TabbedMealBoys */,
+				77DC8A959F8CDD443B27B74B288B7259 /* PureLayout */,
+				23D4DA446B8E65FDC5A2212A984B9A9A /* SwiftyButton */,
+				D5B4E15A57D082BBAF59E48A424E6AF3 /* TextFieldEffects */,
 			);
 		};
 /* End PBXProject section */
@@ -330,11 +652,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A7FAF838E2299B76C58F09B9E27919EB /* Sources */ = {
+		16DB7C1CC612DF8181FC9B0AF7F1B45D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22C3C1F7A969BBB6456BB46A956354BE /* Pods-TabbedMealBoys-dummy.m in Sources */,
+				7961F3D3FAC000D3FE5DBCC3E283D053 /* SwiftyButton+ResizableImage.swift in Sources */,
+				5713C34BCB7B7C3B46DD4A397A9C6558 /* SwiftyButton-dummy.m in Sources */,
+				8063E1F24653874FC3F89E58446EB445 /* SwiftyButton.swift in Sources */,
+				4ED1C83B0B0BBA6AE45D4777420FF18B /* SwiftyCustomContentButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71A60F891F138B2A703C63E4D5C4FB9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F1AECAB036323705E1964C34AD688C2 /* AkiraTextField.swift in Sources */,
+				038EDED52850DB977591E4C62B3CB09A /* HoshiTextField.swift in Sources */,
+				6FECCBF7588A3C69D09E97BD4F3FB4B7 /* IsaoTextField.swift in Sources */,
+				424730E6BB5FBCED9F5AF984AD4DC337 /* JiroTextField.swift in Sources */,
+				2DAB210DF78A95B41083DB4B981C9C81 /* KaedeTextField.swift in Sources */,
+				5B3B019FA9944F4AFD50A7BDFD43B102 /* MadokaTextField.swift in Sources */,
+				E62AA5F36FDCB552186B5BFD80FF79CA /* MinoruTextField.swift in Sources */,
+				B5079A099C148188BA2257ECE9A0E392 /* TextFieldEffects-dummy.m in Sources */,
+				5991D5F2016649A97D59B185C610893E /* TextFieldsEffects.swift in Sources */,
+				276A355B57152D9831D0F9B21138425C /* YokoTextField.swift in Sources */,
+				E3BD6B97A125DA2AEC5C629421E993AC /* YoshikoTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A697AA27372F96B246EBE49B50D2514 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91B8C461106DCAC0CF58664984B6EF64 /* Pods-TabbedMealBoys-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,14 +710,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4F734600FCBF3BAB84FC3329FE8FC1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29DDADA1B33112730FA7FBD503F6DDCD /* ALView+PureLayout.m in Sources */,
+				FE580E54F67B4A93C7EB4A8462B86104 /* NSArray+PureLayout.m in Sources */,
+				67C8839AA4270B03DC87363D0C8DF9E0 /* NSLayoutConstraint+PureLayout.m in Sources */,
+				CCFF482D127C7D86BB016411A74E0FD9 /* PureLayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		50740F6BCDF72769AA9AD33C2DFA8D34 /* PBXTargetDependency */ = {
+		25B63702E6F80FB247F5620F31406A49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = 77DC8A959F8CDD443B27B74B288B7259 /* PureLayout */;
+			targetProxy = CDAC56565E8FE70C9B15CC1DA4B419B5 /* PBXContainerItemProxy */;
+		};
+		6B4CBBE2BFAA7DAF0045197B7CE0D60F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GaugeKit;
 			target = 122253C62F330ED922A7C46D47CF8DC2 /* GaugeKit */;
-			targetProxy = 00D490989D5FE811A4749578B902B2CB /* PBXContainerItemProxy */;
+			targetProxy = 1AE5EF83AEB081C82E028C1BBC0FA423 /* PBXContainerItemProxy */;
+		};
+		9699F2CEC8F9D4B875AE9B97C1B9D08D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = 77DC8A959F8CDD443B27B74B288B7259 /* PureLayout */;
+			targetProxy = C25CE90B1E1C7707B273F050EAF80496 /* PBXContainerItemProxy */;
+		};
+		A739E33E16750468AB8ADBA119B57106 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyButton;
+			target = 23D4DA446B8E65FDC5A2212A984B9A9A /* SwiftyButton */;
+			targetProxy = 98C7F4EC1CA746A04707F42A9E318FD8 /* PBXContainerItemProxy */;
+		};
+		C60D9E71EAF4D1FDB6E607CBF7CA632D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TextFieldEffects;
+			target = D5B4E15A57D082BBAF59E48A424E6AF3 /* TextFieldEffects */;
+			targetProxy = 5AAC7DC9D54E50FE391128364A5C4042 /* PBXContainerItemProxy */;
 		};
 		EC9E55DB0CDC4ADD5FB0D59DF1F0D6C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -379,7 +765,7 @@
 /* Begin XCBuildConfiguration section */
 		026E83CA27108E59C816F215826C32A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2ECCD4DE3A5EAF382DD58832E2C5E32C /* GaugeKit.xcconfig */;
+			baseConfigurationReference = 764F512D56C76583C2F46B2CC913BDB9 /* GaugeKit.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = GaugeKit;
@@ -391,7 +777,7 @@
 		};
 		400C39A282838E15B4E54F6777260DAE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2ECCD4DE3A5EAF382DD58832E2C5E32C /* GaugeKit.xcconfig */;
+			baseConfigurationReference = 764F512D56C76583C2F46B2CC913BDB9 /* GaugeKit.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = GaugeKit;
@@ -401,38 +787,7 @@
 			};
 			name = Release;
 		};
-		4AA73AAC46D149D4082C0B53C16F1A1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0560B06C15DA192263A819A40B8E25F1 /* Pods-TabbedMealBoys.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TabbedMealBoys/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TabbedMealBoys/Pods-TabbedMealBoys.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_TabbedMealBoys;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		641EFE70E242B9F991EE31C1E6D6792C /* Release */ = {
+		4E640B651D3A49BA0638BDAAF7F2AA30 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C6EA95FC6E29C73DE2CCF76E8CE0C030 /* Pods-TabbedMealBoys.release.xcconfig */;
 			buildSettings = {
@@ -464,7 +819,7 @@
 		};
 		6B04A02A9629495216E717C7B9AC0B48 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2ECCD4DE3A5EAF382DD58832E2C5E32C /* GaugeKit.xcconfig */;
+			baseConfigurationReference = 764F512D56C76583C2F46B2CC913BDB9 /* GaugeKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -492,7 +847,7 @@
 		};
 		75637707BBBAE5AEFF009E584C37EDB7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2ECCD4DE3A5EAF382DD58832E2C5E32C /* GaugeKit.xcconfig */;
+			baseConfigurationReference = 764F512D56C76583C2F46B2CC913BDB9 /* GaugeKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -516,6 +871,61 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		76C856F5FB127E5E1A8303FAC25C7A39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ADAFA8F6C0AA7569F39B4BA97D71295 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		77EAAD131EBE2E4767FCF25CA2FD75E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4766E045000E06E40C9C6813FA42C643 /* SwiftyButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -555,6 +965,146 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
+		};
+		AEDF14A74F6F49DF2D2E9AFC1644FC65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0560B06C15DA192263A819A40B8E25F1 /* Pods-TabbedMealBoys.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TabbedMealBoys/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TabbedMealBoys/Pods-TabbedMealBoys.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_TabbedMealBoys;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D6A5F087B35165087A8FB457040644A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F87906EE795CA0C1D1B8755C3DCCBA44 /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D9C7D9A5D25906B41076C0B1118E0519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ADAFA8F6C0AA7569F39B4BA97D71295 /* TextFieldEffects.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TextFieldEffects/TextFieldEffects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TextFieldEffects/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TextFieldEffects/TextFieldEffects.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TextFieldEffects;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EBAA050BC50F07A80EDA83F46BD34545 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F87906EE795CA0C1D1B8755C3DCCBA44 /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F21E9015A8EA275B789067A3337D7B6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4766E045000E06E40C9C6813FA42C643 /* SwiftyButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -602,15 +1152,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4AB1052456A4A274201096D07ED7C3A7 /* Build configuration list for PBXNativeTarget "Pods-TabbedMealBoys" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4AA73AAC46D149D4082C0B53C16F1A1E /* Debug */,
-				641EFE70E242B9F991EE31C1E6D6792C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		58ACB7777887A696C8ACC03D1E4A8066 /* Build configuration list for PBXNativeTarget "GaugeKit-GaugeKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -625,6 +1166,42 @@
 			buildConfigurations = (
 				6B04A02A9629495216E717C7B9AC0B48 /* Debug */,
 				75637707BBBAE5AEFF009E584C37EDB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E361B9186018820496395B1EF2C35DA /* Build configuration list for PBXNativeTarget "Pods-TabbedMealBoys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEDF14A74F6F49DF2D2E9AFC1644FC65 /* Debug */,
+				4E640B651D3A49BA0638BDAAF7F2AA30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A868EB20DF460B07EC2FD1D84250266B /* Build configuration list for PBXNativeTarget "SwiftyButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77EAAD131EBE2E4767FCF25CA2FD75E5 /* Debug */,
+				F21E9015A8EA275B789067A3337D7B6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9DEE6B8BD9A03C9D329B54E5D9EBD48 /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6A5F087B35165087A8FB457040644A2 /* Debug */,
+				EBAA050BC50F07A80EDA83F46BD34545 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB8FF49249E145038734F0A8D5D90E54 /* Build configuration list for PBXNativeTarget "TextFieldEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C7D9A5D25906B41076C0B1118E0519 /* Debug */,
+				76C856F5FB127E5E1A8303FAC25C7A39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

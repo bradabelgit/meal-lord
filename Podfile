@@ -5,6 +5,9 @@ use_frameworks!
 
 target 'TabbedMealBoys' do
  pod "GaugeKit"
+ pod "TextFieldEffects"
+ pod “SwiftyButton”
+
 end
 
 target 'TabbedMealBoysTests' do

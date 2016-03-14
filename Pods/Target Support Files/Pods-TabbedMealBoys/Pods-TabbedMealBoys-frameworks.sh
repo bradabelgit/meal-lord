@@ -85,7 +85,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-TabbedMealBoys/GaugeKit.framework"
+  install_framework "Pods-TabbedMealBoys/PureLayout.framework"
+  install_framework "Pods-TabbedMealBoys/SwiftyButton.framework"
+  install_framework "Pods-TabbedMealBoys/TextFieldEffects.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-TabbedMealBoys/GaugeKit.framework"
+  install_framework "Pods-TabbedMealBoys/PureLayout.framework"
+  install_framework "Pods-TabbedMealBoys/SwiftyButton.framework"
+  install_framework "Pods-TabbedMealBoys/TextFieldEffects.framework"
 fi
