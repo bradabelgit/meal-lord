@@ -30,6 +30,7 @@ class NomAddViewController: UIViewController, UITextFieldDelegate{
     
     @IBAction func btnAddTask_Click(sender:UIButton){
         taskMgr.addTask(txtName.text!, cals: txtCals.text!, pro: txtProtein.text!, carbs:  txtCarb.text!, fat:  txtFat.text!, qty: txtSize.text!);
+//        nomsManager.addNoms(Nom(txtName.text!, txtCals.text, txtProtein.text, txtCarb.text, txtFat.text, txtSize.text))        
         
         self.view.endEditing(true)
         

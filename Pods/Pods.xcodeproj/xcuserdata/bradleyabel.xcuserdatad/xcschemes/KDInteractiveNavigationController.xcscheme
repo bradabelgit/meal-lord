@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '064924D15609E039E665FC36'
-               BlueprintName = 'PureLayout'
+               BlueprintIdentifier = '82696DEC394B1DC62210088A'
+               BlueprintName = 'KDInteractiveNavigationController'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'PureLayout.framework'>
+               BuildableName = 'KDInteractiveNavigationController.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

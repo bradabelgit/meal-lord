@@ -24,12 +24,6 @@ class DailyProgressViewController: UIViewController {
     let person = (cal: "2000", fat: "50", carb: "250", pro: "150")
 
     func configureProgress () {
-        
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
         var EatenFat: Double = 0
         var EatenCarb: Double = 0
         var EatenPro: Double = 0
@@ -64,6 +58,12 @@ class DailyProgressViewController: UIViewController {
         proGauge.rate = CGFloat(proPercent)
         carbGauge.rate = CGFloat(carbPercent)
         calGauge.rate = CGFloat(calPercent)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        configureProgress()
     }
 
     override func didReceiveMemoryWarning() {
@@ -108,8 +108,6 @@ class DailyProgressViewController: UIViewController {
         carbGauge.rate = CGFloat(carbPercent)
         proGauge.rate = CGFloat(proPercent)
         calGauge.rate = CGFloat(calPercent)
-        
-        print(proPercent);
         
         // Overflow Calorie Gauge
         if (calPercent > 100) {

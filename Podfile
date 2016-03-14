@@ -6,7 +6,8 @@ use_frameworks!
 target 'TabbedMealBoys' do
  pod "GaugeKit"
  pod "TextFieldEffects"
- pod “SwiftyButton”
+ pod "SwiftyButton"
+ pod "KDInteractiveNavigationController"
 
 end
 

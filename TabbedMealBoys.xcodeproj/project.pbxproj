@@ -18,6 +18,9 @@
 		990AB0E31C8609420046CA72 /* TabbedMealBoysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990AB0E21C8609420046CA72 /* TabbedMealBoysUITests.swift */; };
 		9983F5EA1C86273700C5DB2C /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9983F5E91C86273700C5DB2C /* TaskManager.swift */; };
 		9983F5EC1C862F8700C5DB2C /* NomAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9983F5EB1C862F8700C5DB2C /* NomAddViewController.swift */; };
+		B17D0E8D1C97566800ABA830 /* Nom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17D0E8C1C97566800ABA830 /* Nom.swift */; };
+		B17D0E8F1C975C7900ABA830 /* DailyPlanItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17D0E8E1C975C7900ABA830 /* DailyPlanItemsTableViewController.swift */; };
+		B17D0E911C975ECC00ABA830 /* NomsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17D0E901C975ECC00ABA830 /* NomsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +57,11 @@
 		990AB0DE1C8609420046CA72 /* TabbedMealBoysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabbedMealBoysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		990AB0E21C8609420046CA72 /* TabbedMealBoysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedMealBoysUITests.swift; sourceTree = "<group>"; };
 		990AB0E41C8609420046CA72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9983F5E91C86273700C5DB2C /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		9983F5E91C86273700C5DB2C /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskManager.swift; path = TabbedMealBoys/TaskManager.swift; sourceTree = "<group>"; };
 		9983F5EB1C862F8700C5DB2C /* NomAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NomAddViewController.swift; sourceTree = "<group>"; };
+		B17D0E8C1C97566800ABA830 /* Nom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nom.swift; sourceTree = "<group>"; };
+		B17D0E8E1C975C7900ABA830 /* DailyPlanItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyPlanItemsTableViewController.swift; sourceTree = "<group>"; };
+		B17D0E901C975ECC00ABA830 /* NomsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NomsManager.swift; sourceTree = "<group>"; };
 		F060654B2700FF609B8E7502 /* Pods_TabbedMealBoys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabbedMealBoys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -96,6 +102,9 @@
 		990AB0B41C8609420046CA72 = {
 			isa = PBXGroup;
 			children = (
+				B17D0E901C975ECC00ABA830 /* NomsManager.swift */,
+				B17D0E8C1C97566800ABA830 /* Nom.swift */,
+				9983F5E91C86273700C5DB2C /* TaskManager.swift */,
 				990AB0BF1C8609420046CA72 /* TabbedMealBoys */,
 				990AB0D61C8609420046CA72 /* TabbedMealBoysTests */,
 				990AB0E11C8609420046CA72 /* TabbedMealBoysUITests */,
@@ -126,7 +135,7 @@
 				990AB0C91C8609420046CA72 /* Assets.xcassets */,
 				990AB0CB1C8609420046CA72 /* LaunchScreen.storyboard */,
 				990AB0CE1C8609420046CA72 /* Info.plist */,
-				9983F5E91C86273700C5DB2C /* TaskManager.swift */,
+				B17D0E8E1C975C7900ABA830 /* DailyPlanItemsTableViewController.swift */,
 			);
 			path = TabbedMealBoys;
 			sourceTree = "<group>";
@@ -340,8 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B17D0E8F1C975C7900ABA830 /* DailyPlanItemsTableViewController.swift in Sources */,
+				B17D0E8D1C97566800ABA830 /* Nom.swift in Sources */,
 				990AB0C51C8609420046CA72 /* DailyPlanViewController.swift in Sources */,
 				990AB0C11C8609420046CA72 /* AppDelegate.swift in Sources */,
+				B17D0E911C975ECC00ABA830 /* NomsManager.swift in Sources */,
 				9983F5EA1C86273700C5DB2C /* TaskManager.swift in Sources */,
 				990AB0C31C8609420046CA72 /* DailyProgressViewController.swift in Sources */,
 				9983F5EC1C862F8700C5DB2C /* NomAddViewController.swift in Sources */,

@@ -6,37 +6,47 @@
 	<dict>
 		<key>GaugeKit-GaugeKit.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>GaugeKit.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>KDInteractiveNavigationController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-TabbedMealBoys.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>PureLayout.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SwiftyButton.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>TextFieldEffects.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0561928EC4BD64F22F762FE0759AB365</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0CC3AC85291D76DF4348A46011097C3C</key>
 		<dict>
 			<key>primary</key>
@@ -47,27 +57,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>23D4DA446B8E65FDC5A2212A984B9A9A</key>
+		<key>9B36D6D7C883FF304EE8011FFC5EAC7E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4F3F881660B75833B9C11C3D92B329D3</key>
+		<key>A640FA53438AD81C1A320B08A0E09B15</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>77DC8A959F8CDD443B27B74B288B7259</key>
+		<key>B5F627792E2D551FF962F9496BDA64DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D5B4E15A57D082BBAF59E48A424E6AF3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F7140FC9F6D13D61CBAFD39E13896470</key>
+		<key>EA1E0C45E767FA7B9A11CDC987D5398A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
