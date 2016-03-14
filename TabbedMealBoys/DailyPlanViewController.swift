@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class DailyPlanViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var tblTasks: UITableView!
     

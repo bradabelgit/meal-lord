@@ -19,6 +19,21 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>PureLayout.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>SwiftyButton.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>TextFieldEffects.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -28,6 +43,26 @@
 			<true/>
 		</dict>
 		<key>122253C62F330ED922A7C46D47CF8DC2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>23D4DA446B8E65FDC5A2212A984B9A9A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4F3F881660B75833B9C11C3D92B329D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>77DC8A959F8CDD443B27B74B288B7259</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5B4E15A57D082BBAF59E48A424E6AF3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
