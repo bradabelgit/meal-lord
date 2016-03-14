@@ -7,8 +7,6 @@ target 'TabbedMealBoys' do
  pod "GaugeKit"
  pod "TextFieldEffects"
  pod "SwiftyButton"
- pod "KDInteractiveNavigationController"
-
 end
 
 target 'TabbedMealBoysTests' do
