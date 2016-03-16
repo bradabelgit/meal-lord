@@ -7,11 +7,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="TabbedMealBoys" customModuleProvider="target">
             <connections>
-                <outlet property="caloriesText" destination="cC3-RI-Pvb" id="rJa-OY-uxO"/>
-                <outlet property="carbsText" destination="xdX-4r-4E4" id="zgL-K3-dNq"/>
-                <outlet property="fatText" destination="goH-wp-AbZ" id="BBB-sO-EKL"/>
-                <outlet property="nameText" destination="DaS-Hh-dGD" id="4QN-JT-gqO"/>
-                <outlet property="proteinText" destination="chP-Uv-49E" id="hC2-R3-RKO"/>
+                <outlet property="caloriesText" destination="RY8-7y-zLB" id="eKi-Oi-dHc"/>
+                <outlet property="carbsText" destination="Ifm-A6-O6P" id="heB-2m-skK"/>
+                <outlet property="fatText" destination="5dF-Ev-N1H" id="agH-Vo-kqg"/>
+                <outlet property="nameText" destination="LT0-AW-PmJ" id="HXL-At-KiJ"/>
+                <outlet property="proteinText" destination="pzo-yS-Tdi" id="4Fp-hJ-NeU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,21 +30,6 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DaS-Hh-dGD">
-                            <rect key="frame" x="58" y="83" width="269" height="30"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Goal Protein" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="chP-Uv-49E">
-                            <rect key="frame" x="58" y="159" width="269" height="30"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Goal Fat" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="goH-wp-AbZ">
-                            <rect key="frame" x="58" y="197" width="269" height="30"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
-                        </textField>
                         <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKY-Ga-VXt">
                             <rect key="frame" x="58" y="273" width="269" height="75"/>
                             <color key="backgroundColor" red="0.58823529409999997" green="0.91764705879999997" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -53,33 +38,108 @@
                                 <action selector="updateProfile:" destination="-1" eventType="touchUpInside" id="3gF-HE-eDw"/>
                             </connections>
                         </button>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Goal Carbs" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xdX-4r-4E4">
-                            <rect key="frame" x="58" y="235" width="269" height="30"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Fat (g)" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5dF-Ev-N1H" customClass="KaedeTextField" customModule="TextFieldEffects">
+                            <rect key="frame" x="57" y="195" width="270" height="40"/>
+                            <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                             <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="foregroundColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                    <real key="value" value="1.3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Goal Calories" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cC3-RI-Pvb">
-                            <rect key="frame" x="58" y="121" width="269" height="30"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Protein (g)" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pzo-yS-Tdi" customClass="KaedeTextField" customModule="TextFieldEffects">
+                            <rect key="frame" x="57" y="155" width="270" height="40"/>
+                            <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                             <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="foregroundColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                    <real key="value" value="1.3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Calories (Kcal)" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RY8-7y-zLB" customClass="KaedeTextField" customModule="TextFieldEffects">
+                            <rect key="frame" x="57" y="115" width="270" height="40"/>
+                            <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="foregroundColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                    <real key="value" value="1.3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Carbs (g)" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ifm-A6-O6P" customClass="KaedeTextField" customModule="TextFieldEffects">
+                            <rect key="frame" x="57" y="233" width="270" height="40"/>
+                            <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="foregroundColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                    <real key="value" value="1.3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LT0-AW-PmJ" customClass="KaedeTextField" customModule="TextFieldEffects">
+                            <rect key="frame" x="57" y="75" width="270" height="40"/>
+                            <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="foregroundColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                    <real key="value" value="1.3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </textField>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="WyS-xE-Z9W" firstAttribute="width" secondItem="CAZ-ic-IiJ" secondAttribute="width" id="0cc-ig-c4e"/>
-                        <constraint firstItem="cC3-RI-Pvb" firstAttribute="centerX" secondItem="CAZ-ic-IiJ" secondAttribute="centerX" id="2g4-cd-aVf"/>
                         <constraint firstItem="aKY-Ga-VXt" firstAttribute="centerX" secondItem="CAZ-ic-IiJ" secondAttribute="centerX" id="2j2-1J-76b"/>
-                        <constraint firstItem="chP-Uv-49E" firstAttribute="width" secondItem="CAZ-ic-IiJ" secondAttribute="width" id="7mG-Eq-Q2N"/>
-                        <constraint firstItem="cC3-RI-Pvb" firstAttribute="width" secondItem="CAZ-ic-IiJ" secondAttribute="width" id="ED2-3f-YsP"/>
-                        <constraint firstItem="chP-Uv-49E" firstAttribute="centerX" secondItem="CAZ-ic-IiJ" secondAttribute="centerX" id="Ge4-rB-m6R"/>
+                        <constraint firstItem="Ifm-A6-O6P" firstAttribute="width" secondItem="CAZ-ic-IiJ" secondAttribute="width" id="6ve-fo-iYx"/>
+                        <constraint firstItem="pzo-yS-Tdi" firstAttribute="centerX" secondItem="CAZ-ic-IiJ" secondAttribute="centerX" id="JFF-YG-Qt0"/>
                         <constraint firstItem="aKY-Ga-VXt" firstAttribute="width" secondItem="CAZ-ic-IiJ" secondAttribute="width" id="P8h-nl-4Bk"/>
-                        <constraint firstItem="goH-wp-AbZ" firstAttribute="width" secondItem="CAZ-ic-IiJ" secondAttribute="width" id="Unc-BZ-9yO"/>
-                        <constraint firstItem="xdX-4r-4E4" firstAttribute="width" secondItem="CAZ-ic-IiJ" secondAttribute="width" id="Wjt-ZR-HCd"/>
-                        <constraint firstItem="DaS-Hh-dGD" firstAttribute="width" secondItem="CAZ-ic-IiJ" secondAttribute="width" id="XTk-r7-zyH"/>
-                        <constraint firstItem="goH-wp-AbZ" firstAttribute="centerX" secondItem="CAZ-ic-IiJ" secondAttribute="centerX" id="hbG-Ty-rfg"/>
-                        <constraint firstItem="DaS-Hh-dGD" firstAttribute="centerX" secondItem="CAZ-ic-IiJ" secondAttribute="centerX" id="jLs-t8-ja8"/>
-                        <constraint firstItem="xdX-4r-4E4" firstAttribute="centerX" secondItem="CAZ-ic-IiJ" secondAttribute="centerX" id="n9I-O3-B70"/>
+                        <constraint firstItem="Ifm-A6-O6P" firstAttribute="centerX" secondItem="CAZ-ic-IiJ" secondAttribute="centerX" id="Pk5-xQ-qnQ"/>
+                        <constraint firstItem="LT0-AW-PmJ" firstAttribute="centerX" secondItem="CAZ-ic-IiJ" secondAttribute="centerX" id="b49-tU-9Me"/>
+                        <constraint firstItem="pzo-yS-Tdi" firstAttribute="width" secondItem="CAZ-ic-IiJ" secondAttribute="width" id="bw8-BO-EdV"/>
+                        <constraint firstItem="RY8-7y-zLB" firstAttribute="width" secondItem="CAZ-ic-IiJ" secondAttribute="width" id="lpL-n5-v3f"/>
+                        <constraint firstItem="LT0-AW-PmJ" firstAttribute="width" secondItem="CAZ-ic-IiJ" secondAttribute="width" id="pDg-cz-dFW"/>
+                        <constraint firstItem="RY8-7y-zLB" firstAttribute="centerX" secondItem="CAZ-ic-IiJ" secondAttribute="centerX" id="qCI-IX-JtI"/>
                         <constraint firstItem="WyS-xE-Z9W" firstAttribute="centerX" secondItem="CAZ-ic-IiJ" secondAttribute="centerX" id="thj-RD-du3"/>
+                        <constraint firstItem="5dF-Ev-N1H" firstAttribute="centerX" secondItem="CAZ-ic-IiJ" secondAttribute="centerX" id="uPm-Iw-FKC"/>
+                        <constraint firstItem="5dF-Ev-N1H" firstAttribute="width" secondItem="CAZ-ic-IiJ" secondAttribute="width" id="x4U-aQ-Yn4"/>
                     </constraints>
                 </view>
             </subviews>

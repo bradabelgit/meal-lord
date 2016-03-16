@@ -8,16 +8,18 @@
 
 import UIKit
 import RealmSwift
+import TextFieldEffects
 
 class ProfileViewController: UIViewController {
     
     var profile: Profile?
     
-    @IBOutlet weak var nameText: UITextField!
-    @IBOutlet weak var caloriesText: UITextField!
-    @IBOutlet weak var proteinText: UITextField!
-    @IBOutlet weak var fatText: UITextField!
-    @IBOutlet weak var carbsText: UITextField!
+
+    @IBOutlet weak var nameText: KaedeTextField!
+    @IBOutlet weak var caloriesText: KaedeTextField!
+    @IBOutlet weak var proteinText: KaedeTextField!
+    @IBOutlet weak var fatText: KaedeTextField!
+    @IBOutlet weak var carbsText: KaedeTextField!
     
     init () {
         super.init(nibName: "ProfileViewController", bundle: nil)
