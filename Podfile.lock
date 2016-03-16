@@ -1,6 +1,11 @@
 PODS:
   - GaugeKit (0.3.2)
   - PureLayout (3.0.1)
+  - Realm (0.98.5):
+    - Realm/Headers (= 0.98.5)
+  - Realm/Headers (0.98.5)
+  - RealmSwift (0.98.5):
+    - Realm (= 0.98.5)
   - SwiftyButton (0.4.0):
     - SwiftyButton/CustomContent (= 0.4.0)
   - SwiftyButton/CustomContent (0.4.0):
@@ -9,12 +14,15 @@ PODS:
 
 DEPENDENCIES:
   - GaugeKit
+  - RealmSwift
   - SwiftyButton
   - TextFieldEffects
 
 SPEC CHECKSUMS:
   GaugeKit: 4d5c3491521ed2d6e2f83cac5f51d0cd09db8989
   PureLayout: f35f5384c9c4e4479df041dbe33ad7577b71ddfb
+  Realm: db08379969e45cea2edd1c3c0a090fe9e22d2d2f
+  RealmSwift: cb11ad1c35e15dc982f2dbf5afe2a3124193a358
   SwiftyButton: fffcc0d82b2b5f9ec1681f20ee9c67bed0d5c73b
   TextFieldEffects: a1a78efeb93b65c611ad287b28a068c9a4a5f5b4
 

@@ -10,17 +10,31 @@
 		6EA7FA12CE0A4328ACEDD57C /* Pods_TabbedMealBoys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F060654B2700FF609B8E7502 /* Pods_TabbedMealBoys.framework */; };
 		990AB0C11C8609420046CA72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990AB0C01C8609420046CA72 /* AppDelegate.swift */; };
 		990AB0C31C8609420046CA72 /* DailyProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990AB0C21C8609420046CA72 /* DailyProgressViewController.swift */; };
-		990AB0C51C8609420046CA72 /* DailyPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990AB0C41C8609420046CA72 /* DailyPlanViewController.swift */; };
 		990AB0C81C8609420046CA72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 990AB0C61C8609420046CA72 /* Main.storyboard */; };
 		990AB0CA1C8609420046CA72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 990AB0C91C8609420046CA72 /* Assets.xcassets */; };
 		990AB0CD1C8609420046CA72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 990AB0CB1C8609420046CA72 /* LaunchScreen.storyboard */; };
 		990AB0D81C8609420046CA72 /* TabbedMealBoysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990AB0D71C8609420046CA72 /* TabbedMealBoysTests.swift */; };
 		990AB0E31C8609420046CA72 /* TabbedMealBoysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990AB0E21C8609420046CA72 /* TabbedMealBoysUITests.swift */; };
-		9983F5EA1C86273700C5DB2C /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9983F5E91C86273700C5DB2C /* TaskManager.swift */; };
-		9983F5EC1C862F8700C5DB2C /* NomAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9983F5EB1C862F8700C5DB2C /* NomAddViewController.swift */; };
+		B171CD521C991A7E00750EF4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B171CD511C991A7E00750EF4 /* Profile.swift */; };
+		B171CD551C999A9F00750EF4 /* AddNomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B171CD531C999A9F00750EF4 /* AddNomViewController.swift */; };
+		B171CD561C999A9F00750EF4 /* AddNomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B171CD541C999A9F00750EF4 /* AddNomViewController.xib */; };
 		B17D0E8D1C97566800ABA830 /* Nom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17D0E8C1C97566800ABA830 /* Nom.swift */; };
-		B17D0E8F1C975C7900ABA830 /* DailyPlanItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17D0E8E1C975C7900ABA830 /* DailyPlanItemsTableViewController.swift */; };
-		B17D0E911C975ECC00ABA830 /* NomsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17D0E901C975ECC00ABA830 /* NomsManager.swift */; };
+		B1B021B81C978008004606CC /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B021B71C978008004606CC /* MasterViewController.swift */; };
+		B1B021BF1C9789F2004606CC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B021BD1C9789F2004606CC /* ProfileViewController.swift */; };
+		B1B021C01C9789F2004606CC /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1B021BE1C9789F2004606CC /* ProfileViewController.xib */; };
+		B1C2F1B61C99A6C6003F11FE /* NomsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C2F1B41C99A6C6003F11FE /* NomsTableViewController.swift */; };
+		B1C2F1B71C99A6C6003F11FE /* NomsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1C2F1B51C99A6C6003F11FE /* NomsTableViewController.xib */; };
+		B1C2F1BA1C99B393003F11FE /* NomsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C2F1B81C99B393003F11FE /* NomsTableViewCell.swift */; };
+		B1C2F1BB1C99B393003F11FE /* NomsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1C2F1B91C99B393003F11FE /* NomsTableViewCell.xib */; };
+		B1C2F1BD1C99C8A9003F11FE /* PlanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C2F1BC1C99C8A9003F11FE /* PlanManager.swift */; };
+		B1C2F1BF1C99C8FA003F11FE /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C2F1BE1C99C8FA003F11FE /* Plan.swift */; };
+		B1C2F1C11C99CFCC003F11FE /* PlanNom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C2F1C01C99CFCC003F11FE /* PlanNom.swift */; };
+		B1C2F1C41C99D427003F11FE /* PlanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C2F1C21C99D427003F11FE /* PlanTableViewController.swift */; };
+		B1C2F1C51C99D427003F11FE /* PlanTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1C2F1C31C99D427003F11FE /* PlanTableViewController.xib */; };
+		B1C2F1C81C99D458003F11FE /* PlanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C2F1C61C99D458003F11FE /* PlanTableViewCell.swift */; };
+		B1C2F1C91C99D458003F11FE /* PlanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1C2F1C71C99D458003F11FE /* PlanTableViewCell.xib */; };
+		B1C2F1CC1C99DDF4003F11FE /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C2F1CA1C99DDF4003F11FE /* ProgressViewController.swift */; };
+		B1C2F1CD1C99DDF4003F11FE /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1C2F1CB1C99DDF4003F11FE /* ProgressViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +60,6 @@
 		990AB0BD1C8609420046CA72 /* TabbedMealBoys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabbedMealBoys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		990AB0C01C8609420046CA72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		990AB0C21C8609420046CA72 /* DailyProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyProgressViewController.swift; sourceTree = "<group>"; };
-		990AB0C41C8609420046CA72 /* DailyPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPlanViewController.swift; sourceTree = "<group>"; };
 		990AB0C71C8609420046CA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		990AB0C91C8609420046CA72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		990AB0CC1C8609420046CA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,11 +70,26 @@
 		990AB0DE1C8609420046CA72 /* TabbedMealBoysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabbedMealBoysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		990AB0E21C8609420046CA72 /* TabbedMealBoysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedMealBoysUITests.swift; sourceTree = "<group>"; };
 		990AB0E41C8609420046CA72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9983F5E91C86273700C5DB2C /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskManager.swift; path = TabbedMealBoys/TaskManager.swift; sourceTree = "<group>"; };
-		9983F5EB1C862F8700C5DB2C /* NomAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NomAddViewController.swift; sourceTree = "<group>"; };
-		B17D0E8C1C97566800ABA830 /* Nom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nom.swift; sourceTree = "<group>"; };
-		B17D0E8E1C975C7900ABA830 /* DailyPlanItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyPlanItemsTableViewController.swift; sourceTree = "<group>"; };
-		B17D0E901C975ECC00ABA830 /* NomsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NomsManager.swift; sourceTree = "<group>"; };
+		B171CD511C991A7E00750EF4 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = ../Profile.swift; sourceTree = "<group>"; };
+		B171CD531C999A9F00750EF4 /* AddNomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNomViewController.swift; sourceTree = "<group>"; };
+		B171CD541C999A9F00750EF4 /* AddNomViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNomViewController.xib; sourceTree = "<group>"; };
+		B17D0E8C1C97566800ABA830 /* Nom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Nom.swift; path = ../Nom.swift; sourceTree = "<group>"; };
+		B1B021B71C978008004606CC /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		B1B021BD1C9789F2004606CC /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B1B021BE1C9789F2004606CC /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		B1C2F1B41C99A6C6003F11FE /* NomsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NomsTableViewController.swift; sourceTree = "<group>"; };
+		B1C2F1B51C99A6C6003F11FE /* NomsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NomsTableViewController.xib; sourceTree = "<group>"; };
+		B1C2F1B81C99B393003F11FE /* NomsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NomsTableViewCell.swift; sourceTree = "<group>"; };
+		B1C2F1B91C99B393003F11FE /* NomsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NomsTableViewCell.xib; sourceTree = "<group>"; };
+		B1C2F1BC1C99C8A9003F11FE /* PlanManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlanManager.swift; path = ../PlanManager.swift; sourceTree = "<group>"; };
+		B1C2F1BE1C99C8FA003F11FE /* Plan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Plan.swift; path = ../Plan.swift; sourceTree = "<group>"; };
+		B1C2F1C01C99CFCC003F11FE /* PlanNom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlanNom.swift; path = ../PlanNom.swift; sourceTree = "<group>"; };
+		B1C2F1C21C99D427003F11FE /* PlanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanTableViewController.swift; sourceTree = "<group>"; };
+		B1C2F1C31C99D427003F11FE /* PlanTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanTableViewController.xib; sourceTree = "<group>"; };
+		B1C2F1C61C99D458003F11FE /* PlanTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanTableViewCell.swift; sourceTree = "<group>"; };
+		B1C2F1C71C99D458003F11FE /* PlanTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanTableViewCell.xib; sourceTree = "<group>"; };
+		B1C2F1CA1C99DDF4003F11FE /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		B1C2F1CB1C99DDF4003F11FE /* ProgressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
 		F060654B2700FF609B8E7502 /* Pods_TabbedMealBoys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabbedMealBoys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -102,9 +130,6 @@
 		990AB0B41C8609420046CA72 = {
 			isa = PBXGroup;
 			children = (
-				B17D0E901C975ECC00ABA830 /* NomsManager.swift */,
-				B17D0E8C1C97566800ABA830 /* Nom.swift */,
-				9983F5E91C86273700C5DB2C /* TaskManager.swift */,
 				990AB0BF1C8609420046CA72 /* TabbedMealBoys */,
 				990AB0D61C8609420046CA72 /* TabbedMealBoysTests */,
 				990AB0E11C8609420046CA72 /* TabbedMealBoysUITests */,
@@ -127,15 +152,15 @@
 		990AB0BF1C8609420046CA72 /* TabbedMealBoys */ = {
 			isa = PBXGroup;
 			children = (
+				B1C2F1BC1C99C8A9003F11FE /* PlanManager.swift */,
+				B1C2F1D41C99E8E7003F11FE /* Data */,
+				B1C2F1CE1C99E853003F11FE /* Pages */,
 				990AB0C01C8609420046CA72 /* AppDelegate.swift */,
 				990AB0C21C8609420046CA72 /* DailyProgressViewController.swift */,
-				990AB0C41C8609420046CA72 /* DailyPlanViewController.swift */,
-				9983F5EB1C862F8700C5DB2C /* NomAddViewController.swift */,
 				990AB0C61C8609420046CA72 /* Main.storyboard */,
 				990AB0C91C8609420046CA72 /* Assets.xcassets */,
 				990AB0CB1C8609420046CA72 /* LaunchScreen.storyboard */,
 				990AB0CE1C8609420046CA72 /* Info.plist */,
-				B17D0E8E1C975C7900ABA830 /* DailyPlanItemsTableViewController.swift */,
 			);
 			path = TabbedMealBoys;
 			sourceTree = "<group>";
@@ -165,6 +190,79 @@
 				590AE4310B48FA37AE330FD4 /* Pods-TabbedMealBoys.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B1C2F1CE1C99E853003F11FE /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				B1B021B71C978008004606CC /* MasterViewController.swift */,
+				B1C2F1D31C99E8C4003F11FE /* Progress */,
+				B1C2F1D21C99E8AF003F11FE /* Profile */,
+				B1C2F1D11C99E8A4003F11FE /* Add Noms */,
+				B1C2F1D01C99E87C003F11FE /* Noms */,
+				B1C2F1CF1C99E864003F11FE /* Plan */,
+			);
+			name = Pages;
+			sourceTree = "<group>";
+		};
+		B1C2F1CF1C99E864003F11FE /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				B1C2F1C21C99D427003F11FE /* PlanTableViewController.swift */,
+				B1C2F1C31C99D427003F11FE /* PlanTableViewController.xib */,
+				B1C2F1C61C99D458003F11FE /* PlanTableViewCell.swift */,
+				B1C2F1C71C99D458003F11FE /* PlanTableViewCell.xib */,
+			);
+			name = Plan;
+			sourceTree = "<group>";
+		};
+		B1C2F1D01C99E87C003F11FE /* Noms */ = {
+			isa = PBXGroup;
+			children = (
+				B1C2F1B41C99A6C6003F11FE /* NomsTableViewController.swift */,
+				B1C2F1B51C99A6C6003F11FE /* NomsTableViewController.xib */,
+				B1C2F1B81C99B393003F11FE /* NomsTableViewCell.swift */,
+				B1C2F1B91C99B393003F11FE /* NomsTableViewCell.xib */,
+			);
+			name = Noms;
+			sourceTree = "<group>";
+		};
+		B1C2F1D11C99E8A4003F11FE /* Add Noms */ = {
+			isa = PBXGroup;
+			children = (
+				B171CD531C999A9F00750EF4 /* AddNomViewController.swift */,
+				B171CD541C999A9F00750EF4 /* AddNomViewController.xib */,
+			);
+			name = "Add Noms";
+			sourceTree = "<group>";
+		};
+		B1C2F1D21C99E8AF003F11FE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B1B021BD1C9789F2004606CC /* ProfileViewController.swift */,
+				B1B021BE1C9789F2004606CC /* ProfileViewController.xib */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		B1C2F1D31C99E8C4003F11FE /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				B1C2F1CA1C99DDF4003F11FE /* ProgressViewController.swift */,
+				B1C2F1CB1C99DDF4003F11FE /* ProgressViewController.xib */,
+			);
+			name = Progress;
+			sourceTree = "<group>";
+		};
+		B1C2F1D41C99E8E7003F11FE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B1C2F1C01C99CFCC003F11FE /* PlanNom.swift */,
+				B1C2F1BE1C99C8FA003F11FE /* Plan.swift */,
+				B171CD511C991A7E00750EF4 /* Profile.swift */,
+				B17D0E8C1C97566800ABA830 /* Nom.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +372,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1C2F1B71C99A6C6003F11FE /* NomsTableViewController.xib in Resources */,
+				B1C2F1BB1C99B393003F11FE /* NomsTableViewCell.xib in Resources */,
+				B1C2F1C51C99D427003F11FE /* PlanTableViewController.xib in Resources */,
+				B1B021C01C9789F2004606CC /* ProfileViewController.xib in Resources */,
 				990AB0CD1C8609420046CA72 /* LaunchScreen.storyboard in Resources */,
+				B171CD561C999A9F00750EF4 /* AddNomViewController.xib in Resources */,
+				B1C2F1C91C99D458003F11FE /* PlanTableViewCell.xib in Resources */,
+				B1C2F1CD1C99DDF4003F11FE /* ProgressViewController.xib in Resources */,
 				990AB0CA1C8609420046CA72 /* Assets.xcassets in Resources */,
 				990AB0C81C8609420046CA72 /* Main.storyboard in Resources */,
 			);
@@ -349,14 +454,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B17D0E8F1C975C7900ABA830 /* DailyPlanItemsTableViewController.swift in Sources */,
+				B1C2F1C81C99D458003F11FE /* PlanTableViewCell.swift in Sources */,
+				B1B021B81C978008004606CC /* MasterViewController.swift in Sources */,
+				B1C2F1BA1C99B393003F11FE /* NomsTableViewCell.swift in Sources */,
+				B1C2F1BD1C99C8A9003F11FE /* PlanManager.swift in Sources */,
+				B171CD521C991A7E00750EF4 /* Profile.swift in Sources */,
+				B1C2F1C41C99D427003F11FE /* PlanTableViewController.swift in Sources */,
 				B17D0E8D1C97566800ABA830 /* Nom.swift in Sources */,
-				990AB0C51C8609420046CA72 /* DailyPlanViewController.swift in Sources */,
+				B1C2F1CC1C99DDF4003F11FE /* ProgressViewController.swift in Sources */,
+				B1C2F1C11C99CFCC003F11FE /* PlanNom.swift in Sources */,
+				B1B021BF1C9789F2004606CC /* ProfileViewController.swift in Sources */,
 				990AB0C11C8609420046CA72 /* AppDelegate.swift in Sources */,
-				B17D0E911C975ECC00ABA830 /* NomsManager.swift in Sources */,
-				9983F5EA1C86273700C5DB2C /* TaskManager.swift in Sources */,
 				990AB0C31C8609420046CA72 /* DailyProgressViewController.swift in Sources */,
-				9983F5EC1C862F8700C5DB2C /* NomAddViewController.swift in Sources */,
+				B1C2F1BF1C99C8FA003F11FE /* Plan.swift in Sources */,
+				B1C2F1B61C99A6C6003F11FE /* NomsTableViewController.swift in Sources */,
+				B171CD551C999A9F00750EF4 /* AddNomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +613,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MealPlanner.TabbedMealBoys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -513,6 +626,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MealPlanner.TabbedMealBoys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -24,17 +24,17 @@ class DailyProgressViewController: UIViewController {
     let person = (cal: "2000", fat: "50", carb: "250", pro: "150")
 
     func configureProgress () {
-        var EatenFat: Double = 0
-        var EatenCarb: Double = 0
-        var EatenPro: Double = 0
-        var EatenCal: Double = 0
+        let EatenFat: Double = 0
+        let EatenCarb: Double = 0
+        let EatenPro: Double = 0
+        let EatenCal: Double = 0
         
-        for task in taskMgr.tasks {
-            EatenFat += Double(task.fat)!
-            EatenCarb += Double(task.carbs)!
-            EatenPro += Double(task.pro)!
-            EatenCal += Double(task.cals)!
-        }
+//        for task in taskMgr.tasks {
+//            EatenFat += Double(task.fat)!
+//            EatenCarb += Double(task.carbs)!
+//            EatenPro += Double(task.pro)!
+//            EatenCal += Double(task.cals)!
+//        }
         
         let fatLeft: Double = Double(person.fat)! - EatenFat
         let proLeft: Double = Double(person.pro)! - EatenPro
@@ -73,18 +73,17 @@ class DailyProgressViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewDidLoad()
         
-        var EatenFat: Double = 0
-        var EatenCarb: Double = 0
-        var EatenPro: Double = 0
-        var EatenCal: Double = 0
+        let EatenFat: Double = 0
+        let EatenCarb: Double = 0
+        let EatenPro: Double = 0
+        let EatenCal: Double = 0
         
-        for task in taskMgr.tasks {
-            EatenFat = EatenFat + Double(task.fat)!
-            EatenCarb = EatenCarb + Double(task.carbs)!
-            EatenPro = EatenPro + Double(task.pro)!
-            EatenCal = EatenCal + Double(task.cals)!
-        }
-        
+//        for task in taskMgr.tasks {
+//            EatenFat = EatenFat + Double(task.fat)!
+//            EatenCarb = EatenCarb + Double(task.carbs)!
+//            EatenPro = EatenPro + Double(task.pro)!
+//            EatenCal = EatenCal + Double(task.cals)!
+//        }
         
         let fatLeft: Double = Double(person.fat)! - EatenFat
         let proLeft: Double = Double(person.pro)! - EatenPro

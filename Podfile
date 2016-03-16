@@ -7,6 +7,7 @@ target 'TabbedMealBoys' do
  pod "GaugeKit"
  pod "TextFieldEffects"
  pod "SwiftyButton"
+ pod "RealmSwift"
 end
 
 target 'TabbedMealBoysTests' do
