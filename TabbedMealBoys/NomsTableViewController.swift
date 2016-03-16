@@ -22,6 +22,8 @@ class NomsTableViewController: UITableViewController {
         let nomsQuery = realm.objects(Nom)
         noms = nomsQuery
         
+        self.tableView.contentInset = UIEdgeInsetsMake(30, 0, 0, 0)
+        
         updateList = realm.objects(Nom).addNotificationBlock {
             results, error in
             

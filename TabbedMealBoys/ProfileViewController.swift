@@ -37,8 +37,6 @@ class ProfileViewController: UIViewController {
         proteinText.text = profile!.goalProtein.value != nil ? String(profile!.goalProtein.value!) : ""
         fatText.text = profile!.goalFat.value != nil ? String(profile!.goalFat.value!) : ""
         carbsText.text = profile!.goalCarbs.value != nil ? String(profile!.goalCarbs.value!) : ""
-        
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidLayoutSubviews() {
@@ -76,6 +74,10 @@ class ProfileViewController: UIViewController {
             profile!.goalFat.value = Int(fatText.text!)
             profile!.goalCarbs.value = Int(carbsText.text!)
         }
+        
+        let parentController: MasterViewController = parentViewController as! MasterViewController
+        
+        parentController.scrollToIndex(0)
     }
     
     // MARK: NSCoding

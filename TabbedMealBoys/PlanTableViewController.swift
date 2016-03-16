@@ -24,6 +24,8 @@ class PlanTableViewController: UITableViewController {
             self.tableView.reloadData()
         }
         
+        self.tableView.contentInset = UIEdgeInsetsMake(30, 0, 0, 0)
+        
         self.tableView.registerNib(UINib(nibName: "PlanTableViewCell", bundle: nil), forCellReuseIdentifier: "PlanTableViewCell")
         
         // Uncomment the following line to preserve selection between presentations

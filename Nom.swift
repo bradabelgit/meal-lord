@@ -10,6 +10,8 @@ import Foundation
 import RealmSwift
 
 class Nom: Object {
+    // Missing serving size
+    
     dynamic var name = ""
     dynamic var servingCalories = 0
     dynamic var servingProtein = 0

@@ -13,6 +13,7 @@ import GaugeKit
 class ProgressViewController: UIViewController {
     var profile: Profile?
     var updateProfile: NotificationToken?
+    var updatePlan: NotificationToken?
     
     @IBOutlet weak var proGauge: Gauge!
     @IBOutlet weak var proOverflowGauge: Gauge!
@@ -37,18 +38,111 @@ class ProgressViewController: UIViewController {
         
         let realm = try! Realm()
         
-
-        
         updateProfile = realm.objects(Profile).addNotificationBlock {
             results, error in
             
-            self.proLabel.text = String(self.profile!.goalProtein.value!) + "g"
-            self.fatLabel.text = String(self.profile!.goalFat.value!) + "g"
-            self.carbLabel.text = String(self.profile!.goalCarbs.value!) + "g"
-            self.calLabel.text = String(self.profile!.goalCalories.value!) + "kCal"
-        }        
+            self.updateGauges()
+        }
         
-        // Do any additional setup after loading the view.
+        updatePlan = realm.objects(Plan).addNotificationBlock {
+            results, error in
+            
+            self.updateGauges()
+        }
+    }
+    
+    func updateGauges() {
+        var EatenFat: Double = 0
+        var EatenCarb: Double = 0
+        var EatenPro: Double = 0
+        var EatenCal: Double = 0
+        
+        for task in planMgr.plan!.noms {
+            EatenFat = EatenFat + Double(task.servingFat)
+            EatenCarb = EatenCarb + Double(task.servingCarbs)
+            EatenPro = EatenPro + Double(task.servingProtein)
+            EatenCal = EatenCal + Double(task.servingCalories)
+        }
+        
+        
+        let profileFat = self.profile!.goalFat.value != nil ? self.profile!.goalFat.value! : 0
+        let profilePro = self.profile!.goalProtein.value != nil ? self.profile!.goalProtein.value! : 0
+        let profileCarb = self.profile!.goalCarbs.value != nil ? self.profile!.goalCarbs.value! : 0
+        let profileCal = self.profile!.goalCalories.value != nil ? self.profile!.goalCalories.value! : 0
+        
+        print(profilePro)
+        print(profileCal)
+        
+        let fatLeft: Double = Double(profileFat) - EatenFat
+        let proLeft: Double = Double(profilePro) - EatenPro
+        let carbLeft: Double = Double(profileCarb) - EatenCarb
+        let calLeft: Double = Double(profileCal) - EatenCal
+        
+        let fatPercent: Int = Int((EatenFat / Double(profileFat))*100)
+        let proPercent: Int = Int((EatenPro / Double(profilePro))*100)
+        let carbPercent: Int = Int((EatenCarb / Double(profileCarb))*100)
+        let calPercent: Int = Int((EatenCal / Double(profileCal))*100)
+        
+        // Setting Label Values
+        self.fatLabel.text = String(Int(fatLeft)) + "g"
+        self.proLabel.text = String(Int(proLeft)) + "g"
+        self.carbLabel.text = String(Int(carbLeft)) + "g"
+        self.calLabel.text = String(Int(calLeft)) + "kcal"
+        
+        // Setting Gauge Values
+        self.fatGauge.rate = CGFloat(fatPercent)
+        self.proGauge.rate = CGFloat(proPercent)
+        self.carbGauge.rate = CGFloat(carbPercent)
+        self.calGauge.rate = CGFloat(calPercent)
+        
+        // Overflow Calorie Gauge
+        if (calPercent > 100) {
+            let remainingCals = calPercent - 100
+            self.calOverflowGauge.hidden = false;
+            self.calOverflowGauge.rate = CGFloat(remainingCals)
+            self.calLabel.text = String("+" + String(Int(EatenCal) - Int(profileCal))+"Kcal")
+            
+        }
+        else{
+            self.calOverflowGauge.hidden = true;
+        }
+        // **************************************
+        
+        // Overflow Protein Gauge
+        if (proPercent > 100) {
+            let remainingPro = proPercent - 100
+            self.proOverflowGauge.hidden = false;
+            self.proOverflowGauge.rate = CGFloat(remainingPro)
+            self.proLabel.text = String("+" + String(Int(EatenPro) - Int(profilePro))+"g")
+        }
+        else{
+            self.proOverflowGauge.hidden = true;
+        }
+        // **************************************
+        
+        // Overflow Fat Gauge
+        if (fatPercent > 100) {
+            let remainingFat = fatPercent - 100
+            self.fatOverflowGauge.hidden = false;
+            self.fatOverflowGauge.rate = CGFloat(remainingFat)
+            self.fatLabel.text = String("+" + String(Int(EatenFat) - Int(profileFat))+"g")
+        }
+        else{
+            self.fatOverflowGauge.hidden = true;
+        }
+        // **************************************
+        
+        // Overflow Carb Gauge
+        if (carbPercent > 100) {
+            let remainingCarbs = carbPercent - 100
+            self.carbOverflowGauge.hidden = false;
+            self.carbOverflowGauge.rate = CGFloat(remainingCarbs)
+            self.carbLabel.text = String("+" + String(Int(EatenCarb) - Int(profileCarb))+"g")
+        }
+        else{
+            self.carbOverflowGauge.hidden = true;
+        }
+        // **************************************
     }
     
     override func didReceiveMemoryWarning() {

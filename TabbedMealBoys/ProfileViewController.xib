@@ -20,46 +20,73 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Goal Carbs" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xdX-4r-4E4">
-                    <rect key="frame" x="166" y="274" width="269" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Goal Fat" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="goH-wp-AbZ">
-                    <rect key="frame" x="166" y="221" width="269" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Goal Protein" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="chP-Uv-49E">
-                    <rect key="frame" x="166" y="170" width="269" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Goal Calories" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cC3-RI-Pvb">
-                    <rect key="frame" x="166" y="118" width="269" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DaS-Hh-dGD">
-                    <rect key="frame" x="166" y="68" width="269" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKY-Ga-VXt">
-                    <rect key="frame" x="166" y="324" width="51" height="30"/>
-                    <state key="normal" title="Update"/>
-                    <connections>
-                        <action selector="updateProfile:" destination="-1" eventType="touchUpInside" id="3gF-HE-eDw"/>
-                    </connections>
-                </button>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CAZ-ic-IiJ">
+                    <rect key="frame" x="108" y="0.0" width="385" height="348"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyS-xE-Z9W">
+                            <rect key="frame" x="58" y="0.0" width="269" height="75"/>
+                            <color key="backgroundColor" red="0.58823529409999997" green="0.91764705879999997" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DaS-Hh-dGD">
+                            <rect key="frame" x="58" y="83" width="269" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Goal Protein" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="chP-Uv-49E">
+                            <rect key="frame" x="58" y="159" width="269" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Goal Fat" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="goH-wp-AbZ">
+                            <rect key="frame" x="58" y="197" width="269" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKY-Ga-VXt">
+                            <rect key="frame" x="58" y="273" width="269" height="75"/>
+                            <color key="backgroundColor" red="0.58823529409999997" green="0.91764705879999997" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Update"/>
+                            <connections>
+                                <action selector="updateProfile:" destination="-1" eventType="touchUpInside" id="3gF-HE-eDw"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Goal Carbs" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xdX-4r-4E4">
+                            <rect key="frame" x="58" y="235" width="269" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Goal Calories" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cC3-RI-Pvb">
+                            <rect key="frame" x="58" y="121" width="269" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="WyS-xE-Z9W" firstAttribute="width" secondItem="CAZ-ic-IiJ" secondAttribute="width" id="0cc-ig-c4e"/>
+                        <constraint firstItem="cC3-RI-Pvb" firstAttribute="centerX" secondItem="CAZ-ic-IiJ" secondAttribute="centerX" id="2g4-cd-aVf"/>
+                        <constraint firstItem="aKY-Ga-VXt" firstAttribute="centerX" secondItem="CAZ-ic-IiJ" secondAttribute="centerX" id="2j2-1J-76b"/>
+                        <constraint firstItem="chP-Uv-49E" firstAttribute="width" secondItem="CAZ-ic-IiJ" secondAttribute="width" id="7mG-Eq-Q2N"/>
+                        <constraint firstItem="cC3-RI-Pvb" firstAttribute="width" secondItem="CAZ-ic-IiJ" secondAttribute="width" id="ED2-3f-YsP"/>
+                        <constraint firstItem="chP-Uv-49E" firstAttribute="centerX" secondItem="CAZ-ic-IiJ" secondAttribute="centerX" id="Ge4-rB-m6R"/>
+                        <constraint firstItem="aKY-Ga-VXt" firstAttribute="width" secondItem="CAZ-ic-IiJ" secondAttribute="width" id="P8h-nl-4Bk"/>
+                        <constraint firstItem="goH-wp-AbZ" firstAttribute="width" secondItem="CAZ-ic-IiJ" secondAttribute="width" id="Unc-BZ-9yO"/>
+                        <constraint firstItem="xdX-4r-4E4" firstAttribute="width" secondItem="CAZ-ic-IiJ" secondAttribute="width" id="Wjt-ZR-HCd"/>
+                        <constraint firstItem="DaS-Hh-dGD" firstAttribute="width" secondItem="CAZ-ic-IiJ" secondAttribute="width" id="XTk-r7-zyH"/>
+                        <constraint firstItem="goH-wp-AbZ" firstAttribute="centerX" secondItem="CAZ-ic-IiJ" secondAttribute="centerX" id="hbG-Ty-rfg"/>
+                        <constraint firstItem="DaS-Hh-dGD" firstAttribute="centerX" secondItem="CAZ-ic-IiJ" secondAttribute="centerX" id="jLs-t8-ja8"/>
+                        <constraint firstItem="xdX-4r-4E4" firstAttribute="centerX" secondItem="CAZ-ic-IiJ" secondAttribute="centerX" id="n9I-O3-B70"/>
+                        <constraint firstItem="WyS-xE-Z9W" firstAttribute="centerX" secondItem="CAZ-ic-IiJ" secondAttribute="centerX" id="thj-RD-du3"/>
+                    </constraints>
+                </view>
             </subviews>
-            <color key="backgroundColor" red="0.38149398565292358" green="0.98428767919540405" blue="0.69566410779953003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.34509803921568627" green="0.80000000000000004" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="xdX-4r-4E4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hes-tB-Eit"/>
-                <constraint firstItem="goH-wp-AbZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mnp-jh-BO6"/>
-                <constraint firstItem="chP-Uv-49E" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tHr-Fz-43B"/>
-                <constraint firstItem="cC3-RI-Pvb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xYJ-7k-zCH"/>
-                <constraint firstItem="DaS-Hh-dGD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zjn-bd-H6W"/>
+                <constraint firstItem="CAZ-ic-IiJ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Kgc-fQ-XKt"/>
+                <constraint firstItem="CAZ-ic-IiJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wck-QV-exz"/>
             </constraints>
             <point key="canvasLocation" x="435" y="522"/>
         </view>

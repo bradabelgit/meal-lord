@@ -25,7 +25,6 @@ class AddNomViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -47,7 +46,7 @@ class AddNomViewController: UIViewController {
         
         nameText.text = ""
         servingSizeText.text = ""
-        servingSizeText.text = ""
+        servingCaloriesText.text = ""
         servingCarbsText.text = ""
         servingFatText.text = ""
         servingProteinText.text = ""

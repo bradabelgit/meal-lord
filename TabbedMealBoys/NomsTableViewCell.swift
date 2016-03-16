@@ -34,9 +34,9 @@ class NomsTableViewCell: UITableViewCell {
         
         newNom.name = nameText.text!
         newNom.servingCalories = Int(caloriesText.text!)!
-        newNom.servingCarbs = Int(proteinText.text!)!
+        newNom.servingProtein = Int(proteinText.text!)!
         newNom.servingFat = Int(fatText.text!)!
-        newNom.servingProtein = Int(carbText.text!)!
+        newNom.servingCarbs = Int(carbText.text!)!
         
         planMgr.addNom(newNom)
         
