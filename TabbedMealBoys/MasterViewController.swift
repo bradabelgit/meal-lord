@@ -26,6 +26,16 @@ class MasterViewController: UIViewController {
         }
     }
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        
+        //LightContent
+        return UIStatusBarStyle.LightContent
+        
+        //Default
+        //return UIStatusBarStyle.Default
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
