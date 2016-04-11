@@ -88,6 +88,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-TabbedMealBoys/PureLayout.framework"
   install_framework "Pods-TabbedMealBoys/Realm.framework"
   install_framework "Pods-TabbedMealBoys/RealmSwift.framework"
+  install_framework "Pods-TabbedMealBoys/SCLAlertView.framework"
   install_framework "Pods-TabbedMealBoys/SwiftyButton.framework"
   install_framework "Pods-TabbedMealBoys/TextFieldEffects.framework"
 fi
@@ -96,6 +97,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-TabbedMealBoys/PureLayout.framework"
   install_framework "Pods-TabbedMealBoys/Realm.framework"
   install_framework "Pods-TabbedMealBoys/RealmSwift.framework"
+  install_framework "Pods-TabbedMealBoys/SCLAlertView.framework"
   install_framework "Pods-TabbedMealBoys/SwiftyButton.framework"
   install_framework "Pods-TabbedMealBoys/TextFieldEffects.framework"
 fi

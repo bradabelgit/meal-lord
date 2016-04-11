@@ -8,6 +8,7 @@ target 'TabbedMealBoys' do
  pod "TextFieldEffects"
  pod "SwiftyButton"
  pod "RealmSwift"
+ pod “SCLAlertView”
 end
 
 target 'TabbedMealBoysTests' do
