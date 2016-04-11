@@ -11,9 +11,10 @@ import RealmSwift
 
 class PlanNom: Object {
     dynamic var name = ""
+    dynamic var servingSizeGrams = 0
     dynamic var servingCalories = 0
     dynamic var servingProtein = 0
     dynamic var servingFat = 0
     dynamic var servingCarbs = 0
-    dynamic var value = false
+    dynamic var eaten = false
 }

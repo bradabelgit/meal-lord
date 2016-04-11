@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddNomViewController" customModule="TabbedMealBoys" customModuleProvider="target">
@@ -116,14 +116,6 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
-                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KuN-dG-si5">
-                            <rect key="frame" x="0.0" y="315" width="320" height="75"/>
-                            <color key="backgroundColor" red="0.69485872983932495" green="0.92342585325241089" blue="0.61595112085342407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="ADD"/>
-                            <connections>
-                                <action selector="addNom:" destination="-1" eventType="touchUpInside" id="RmO-vT-CZW"/>
-                            </connections>
-                        </button>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Serving Size (g)" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eTO-HN-tBA" customClass="KaedeTextField" customModule="TextFieldEffects">
                             <rect key="frame" x="0.0" y="115" width="320" height="40"/>
                             <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -141,6 +133,14 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </textField>
+                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KuN-dG-si5">
+                            <rect key="frame" x="0.0" y="315" width="320" height="75"/>
+                            <color key="backgroundColor" red="0.69485872983932495" green="0.92342585325241089" blue="0.61595112085342407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="ADD"/>
+                            <connections>
+                                <action selector="addNom:" destination="-1" eventType="touchUpInside" id="RmO-vT-CZW"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -160,7 +160,7 @@
                 <constraint firstItem="6FW-wE-dxo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="N2C-2z-l3g"/>
                 <constraint firstItem="6FW-wE-dxo" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Os2-qR-H2M"/>
             </constraints>
-            <point key="canvasLocation" x="291" y="653"/>
+            <point key="canvasLocation" x="289" y="329"/>
         </view>
     </objects>
 </document>

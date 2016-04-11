@@ -15,6 +15,8 @@ class NomsTableViewCell: UITableViewCell {
     @IBOutlet weak var proteinText: UILabel!
     @IBOutlet weak var fatText: UILabel!
     @IBOutlet weak var carbText: UILabel!
+    
+    var nom: Nom?
 
     weak var masterViewController: MasterViewController?
     
@@ -30,13 +32,22 @@ class NomsTableViewCell: UITableViewCell {
     }
     
     @IBAction func AddToPlan(sender: AnyObject) {
+        
+        // CONNOR WORK HERE
+        
+        // HELLO
+        
         let newNom = PlanNom()
         
-        newNom.name = nameText.text!
-        newNom.servingCalories = Int(caloriesText.text!)!
-        newNom.servingProtein = Int(proteinText.text!)!
-        newNom.servingFat = Int(fatText.text!)!
-        newNom.servingCarbs = Int(carbText.text!)!
+        newNom.name = nom!.name
+        newNom.servingCalories = nom!.servingCalories
+        newNom.servingProtein = nom!.servingProtein
+        newNom.servingFat = nom!.servingFat
+        newNom.servingCarbs = nom!.servingCarbs
+        newNom.servingSizeGrams = nom!.servingSizeGrams
+        newNom.eaten = false
+        
+        print(nom!.servingSizeGrams)
         
         planMgr.addNom(newNom)
         

@@ -34,6 +34,8 @@ class ProgressViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(UIDevice.currentDevice().identifierForVendor!.UUIDString)
+        
         loadProfile()
         
         let realm = try! Realm()
@@ -78,10 +80,15 @@ class ProgressViewController: UIViewController {
         let carbLeft: Double = Double(profileCarb) - EatenCarb
         let calLeft: Double = Double(profileCal) - EatenCal
         
-        let fatPercent: Int = Int((EatenFat / Double(profileFat))*100)
-        let proPercent: Int = Int((EatenPro / Double(profilePro))*100)
-        let carbPercent: Int = Int((EatenCarb / Double(profileCarb))*100)
-        let calPercent: Int = Int((EatenCal / Double(profileCal))*100)
+        let fatPercent: Int
+        let proPercent: Int
+        let carbPercent: Int
+        let calPercent: Int
+        
+        fatPercent = (profileFat > 0) ? Int((EatenFat / Double(profileFat))*100) : 0
+        proPercent = (profilePro > 0) ? Int((EatenPro / Double(profilePro))*100) : 0
+        carbPercent = (profileCarb > 0) ? Int((EatenCarb / Double(profileCarb))*100) : 0
+        calPercent = (profileCal > 0) ? Int((EatenCal / Double(profileCal))*100) : 0
         
         // Setting Label Values
         self.fatLabel.text = String(Int(fatLeft)) + "g"

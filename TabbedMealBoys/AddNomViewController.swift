@@ -39,7 +39,8 @@ class AddNomViewController: UIViewController {
         let newNom = Nom()
         
         newNom.name = nameText.text!
-        newNom.servingCalories = Int(servingSizeText.text!)!
+        newNom.servingSizeGrams = Int(servingSizeText.text!)!
+        newNom.servingCalories = Int(servingCaloriesText.text!)!
         newNom.servingCarbs = Int(servingCarbsText.text!)!
         newNom.servingFat = Int(servingFatText.text!)!
         newNom.servingProtein = Int(servingProteinText.text!)!

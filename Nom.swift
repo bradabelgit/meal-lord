@@ -13,6 +13,7 @@ class Nom: Object {
     // Missing serving size
     
     dynamic var name = ""
+    dynamic var servingSizeGrams = 0
     dynamic var servingCalories = 0
     dynamic var servingProtein = 0
     dynamic var servingFat = 0

@@ -75,6 +75,7 @@ class NomsTableViewController: UITableViewController {
         cell.proteinText.text = "\(nom.servingProtein)"
         cell.carbText.text = "\(nom.servingCarbs)"
         cell.fatText.text = "\(nom.servingFat)"
+        cell.nom = nom
         
         cell.masterViewController = parentViewController as? MasterViewController
         
