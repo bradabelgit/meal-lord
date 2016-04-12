@@ -35,8 +35,6 @@
 		B1C2F1C91C99D458003F11FE /* PlanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1C2F1C71C99D458003F11FE /* PlanTableViewCell.xib */; };
 		B1C2F1CC1C99DDF4003F11FE /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C2F1CA1C99DDF4003F11FE /* ProgressViewController.swift */; };
 		B1C2F1CD1C99DDF4003F11FE /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1C2F1CB1C99DDF4003F11FE /* ProgressViewController.xib */; };
-		B1C90DCB1CBC7BB1002FF978 /* TableSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C90DCA1CBC7BB1002FF978 /* TableSectionHeader.swift */; };
-		B1C90DCD1CBC7BD8002FF978 /* TableSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1C90DCC1CBC7BD8002FF978 /* TableSectionHeader.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,8 +90,6 @@
 		B1C2F1C71C99D458003F11FE /* PlanTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanTableViewCell.xib; sourceTree = "<group>"; };
 		B1C2F1CA1C99DDF4003F11FE /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		B1C2F1CB1C99DDF4003F11FE /* ProgressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
-		B1C90DCA1CBC7BB1002FF978 /* TableSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSectionHeader.swift; sourceTree = "<group>"; };
-		B1C90DCC1CBC7BD8002FF978 /* TableSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableSectionHeader.xib; sourceTree = "<group>"; };
 		F060654B2700FF609B8E7502 /* Pods_TabbedMealBoys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabbedMealBoys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -216,8 +212,6 @@
 				B1C2F1C31C99D427003F11FE /* PlanTableViewController.xib */,
 				B1C2F1C61C99D458003F11FE /* PlanTableViewCell.swift */,
 				B1C2F1C71C99D458003F11FE /* PlanTableViewCell.xib */,
-				B1C90DCA1CBC7BB1002FF978 /* TableSectionHeader.swift */,
-				B1C90DCC1CBC7BD8002FF978 /* TableSectionHeader.xib */,
 			);
 			name = Plan;
 			sourceTree = "<group>";
@@ -379,7 +373,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1C2F1B71C99A6C6003F11FE /* NomsTableViewController.xib in Resources */,
-				B1C90DCD1CBC7BD8002FF978 /* TableSectionHeader.xib in Resources */,
 				B1C2F1BB1C99B393003F11FE /* NomsTableViewCell.xib in Resources */,
 				B1C2F1C51C99D427003F11FE /* PlanTableViewController.xib in Resources */,
 				B1B021C01C9789F2004606CC /* ProfileViewController.xib in Resources */,
@@ -470,7 +463,6 @@
 				B17D0E8D1C97566800ABA830 /* Nom.swift in Sources */,
 				B1C2F1CC1C99DDF4003F11FE /* ProgressViewController.swift in Sources */,
 				B1C2F1C11C99CFCC003F11FE /* PlanNom.swift in Sources */,
-				B1C90DCB1CBC7BB1002FF978 /* TableSectionHeader.swift in Sources */,
 				B1B021BF1C9789F2004606CC /* ProfileViewController.swift in Sources */,
 				990AB0C11C8609420046CA72 /* AppDelegate.swift in Sources */,
 				990AB0C31C8609420046CA72 /* DailyProgressViewController.swift in Sources */,

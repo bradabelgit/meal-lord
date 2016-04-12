@@ -62,15 +62,21 @@ class ProgressViewController: UIViewController {
                 EatenFat = EatenFat + Double(task.servingFat)
                 EatenCarb = EatenCarb + Double(task.servingCarbs)
                 EatenPro = EatenPro + Double(task.servingProtein)
-                EatenCal = EatenCal + Double(task.servingCalories)
+                
+                print ("pro \(task.servingProtein)")
+                print ("carbs \(task.servingCarbs)")
+                print ("fat \(task.servingFat)")
+                
+                EatenCal = EatenCal + Double(task.servingProtein * 4) + Double(task.servingCarbs * 4) + Double(task.servingFat * 9)
             }
         }
         
+        print ("eaten cal \(EatenCal)")
         
         let profileFat = self.profile!.goalFat.value != nil ? self.profile!.goalFat.value! : 0
         let profilePro = self.profile!.goalProtein.value != nil ? self.profile!.goalProtein.value! : 0
         let profileCarb = self.profile!.goalCarbs.value != nil ? self.profile!.goalCarbs.value! : 0
-        let profileCal = self.profile!.goalCalories.value != nil ? self.profile!.goalCalories.value! : 0        
+        let profileCal = (profileFat * 9) + (profilePro * 4) + (profileCarb * 4)        
         
         let fatLeft: Double = Double(profileFat) - EatenFat
         let proLeft: Double = Double(profilePro) - EatenPro
@@ -173,14 +179,4 @@ class ProgressViewController: UIViewController {
             }
         }
     }
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
 }

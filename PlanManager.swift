@@ -17,6 +17,8 @@ class PlanManager: NSObject {
     
     override init() {
         super.init()
+    
+        print(Realm.Configuration.defaultConfiguration.path!)
         
         loadPlan()
     }

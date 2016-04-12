@@ -11,7 +11,6 @@ import RealmSwift
 
 class Profile: Object {
     dynamic var name: String?
-    let goalCalories = RealmOptional<Int>()
     let goalProtein = RealmOptional<Int>()
     let goalFat = RealmOptional<Int>()
     let goalCarbs = RealmOptional<Int>()

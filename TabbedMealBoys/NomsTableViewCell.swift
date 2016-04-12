@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SCLAlertView
 
 class NomsTableViewCell: UITableViewCell {
 
@@ -32,23 +33,54 @@ class NomsTableViewCell: UITableViewCell {
     }
     
     @IBAction func AddToPlan(sender: AnyObject) {
+        let alert = SCLAlertView()
+        let grams = alert.addTextField("Please enter quantity (g)")
+        alert.showCloseButton = false
         
-        // CONNOR WORK HERE
+        alert.addButton("+ Breakfast") {
+            self.addNewNom(Double(grams.text!)!, section: 0)
+            alert.hideView()
+        }
+        alert.addButton("+ Lunch") {
+            self.addNewNom(Double(grams.text!)!, section: 1)
+            alert.hideView()
+        }
+        alert.addButton("+ Dinner") {
+            self.addNewNom(Double(grams.text!)!, section: 2)
+            alert.hideView()
+        }
+        alert.addButton("+ Pre-Workout") {
+            self.addNewNom(Double(grams.text!)!, section: 3)
+            alert.hideView()
+        }
+        alert.addButton("+ Post-Workout") {
+            self.addNewNom(Double(grams.text!)!, section: 4)
+            alert.hideView()
+        }
         
-        // HELLO
+        alert.showTitle(nom!.name, subTitle: "", style: .Edit, colorStyle: 0x99E87E)
         
+        masterViewController!.scrollToIndex(1)
+    }
+    
+    func addNewNom(servingGrams: Double, section: Int) {
         let newNom = PlanNom()
         
         newNom.name = nom!.name
-        newNom.servingCalories = nom!.servingCalories
-        newNom.servingProtein = nom!.servingProtein
-        newNom.servingFat = nom!.servingFat
-        newNom.servingCarbs = nom!.servingCarbs
-        newNom.servingSizeGrams = nom!.servingSizeGrams
+        newNom.section = section
         newNom.eaten = false
         
-        planMgr.addNom(newNom)
+        let serving: Double = Double(nom!.servingSizeGrams)
         
-        masterViewController!.scrollToIndex(1)
+        let proteinRatio: Double = Double(nom!.servingProtein)/serving
+        let carbsRatio: Double = Double(nom!.servingCarbs)/serving
+        let fatRatio: Double = Double(nom!.servingFat)/serving
+        
+        newNom.servingProtein = proteinRatio * servingGrams
+        newNom.servingFat = fatRatio * servingGrams
+        newNom.servingCarbs = carbsRatio * servingGrams
+        newNom.servingSizeGrams = servingGrams
+                        
+        planMgr.addNom(newNom)
     }
 }

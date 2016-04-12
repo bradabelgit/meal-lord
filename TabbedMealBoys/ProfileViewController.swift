@@ -16,7 +16,6 @@ class ProfileViewController: UIViewController {
     
 
     @IBOutlet weak var nameText: KaedeTextField!
-    @IBOutlet weak var caloriesText: KaedeTextField!
     @IBOutlet weak var proteinText: KaedeTextField!
     @IBOutlet weak var fatText: KaedeTextField!
     @IBOutlet weak var carbsText: KaedeTextField!
@@ -35,7 +34,6 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         nameText.text = profile!.name ?? ""
-        caloriesText.text = profile!.goalCalories.value != nil ? String(profile!.goalCalories.value!) : ""
         proteinText.text = profile!.goalProtein.value != nil ? String(profile!.goalProtein.value!) : ""
         fatText.text = profile!.goalFat.value != nil ? String(profile!.goalFat.value!) : ""
         carbsText.text = profile!.goalCarbs.value != nil ? String(profile!.goalCarbs.value!) : ""
@@ -71,7 +69,6 @@ class ProfileViewController: UIViewController {
         
         try! realm.write {
             profile!.name = nameText.text
-            profile!.goalCalories.value = Int(caloriesText.text!)
             profile!.goalProtein.value = Int(proteinText.text!)
             profile!.goalFat.value = Int(fatText.text!)
             profile!.goalCarbs.value = Int(carbsText.text!)
@@ -81,16 +78,4 @@ class ProfileViewController: UIViewController {
         
         parentController.scrollToIndex(0)
     }
-    
-    // MARK: NSCoding
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }

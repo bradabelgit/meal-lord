@@ -14,7 +14,6 @@ class AddNomViewController: UIViewController {
 
     @IBOutlet weak var nameText: KaedeTextField!
     @IBOutlet weak var servingSizeText: KaedeTextField!
-    @IBOutlet weak var servingCaloriesText: KaedeTextField!
     @IBOutlet weak var servingProteinText: KaedeTextField!
     @IBOutlet weak var servingCarbsText: KaedeTextField!
     @IBOutlet weak var servingFatText: KaedeTextField!
@@ -39,15 +38,13 @@ class AddNomViewController: UIViewController {
         let newNom = Nom()
         
         newNom.name = nameText.text!
-        newNom.servingSizeGrams = Int(servingSizeText.text!)!
-        newNom.servingCalories = Int(servingCaloriesText.text!)!
-        newNom.servingCarbs = Int(servingCarbsText.text!)!
-        newNom.servingFat = Int(servingFatText.text!)!
-        newNom.servingProtein = Int(servingProteinText.text!)!
+        newNom.servingSizeGrams = Double(servingSizeText.text!)!
+        newNom.servingCarbs = Double(servingCarbsText.text!)!
+        newNom.servingFat = Double(servingFatText.text!)!
+        newNom.servingProtein = Double(servingProteinText.text!)!
         
         nameText.text = ""
         servingSizeText.text = ""
-        servingCaloriesText.text = ""
         servingCarbsText.text = ""
         servingFatText.text = ""
         servingProteinText.text = ""
@@ -59,16 +56,5 @@ class AddNomViewController: UIViewController {
         try! realm.write {
             realm.add(newNom)
         }
-    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    }    
 }
