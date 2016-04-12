@@ -34,8 +34,6 @@ class ProgressViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(UIDevice.currentDevice().identifierForVendor!.UUIDString)
-        
         loadProfile()
         
         let realm = try! Realm()
@@ -60,20 +58,19 @@ class ProgressViewController: UIViewController {
         var EatenCal: Double = 0
         
         for task in planMgr.plan!.noms {
-            EatenFat = EatenFat + Double(task.servingFat)
-            EatenCarb = EatenCarb + Double(task.servingCarbs)
-            EatenPro = EatenPro + Double(task.servingProtein)
-            EatenCal = EatenCal + Double(task.servingCalories)
+            if (task.eaten) {
+                EatenFat = EatenFat + Double(task.servingFat)
+                EatenCarb = EatenCarb + Double(task.servingCarbs)
+                EatenPro = EatenPro + Double(task.servingProtein)
+                EatenCal = EatenCal + Double(task.servingCalories)
+            }
         }
         
         
         let profileFat = self.profile!.goalFat.value != nil ? self.profile!.goalFat.value! : 0
         let profilePro = self.profile!.goalProtein.value != nil ? self.profile!.goalProtein.value! : 0
         let profileCarb = self.profile!.goalCarbs.value != nil ? self.profile!.goalCarbs.value! : 0
-        let profileCal = self.profile!.goalCalories.value != nil ? self.profile!.goalCalories.value! : 0
-        
-        print(profilePro)
-        print(profileCal)
+        let profileCal = self.profile!.goalCalories.value != nil ? self.profile!.goalCalories.value! : 0        
         
         let fatLeft: Double = Double(profileFat) - EatenFat
         let proLeft: Double = Double(profilePro) - EatenPro

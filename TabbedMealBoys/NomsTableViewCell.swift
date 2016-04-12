@@ -47,8 +47,6 @@ class NomsTableViewCell: UITableViewCell {
         newNom.servingSizeGrams = nom!.servingSizeGrams
         newNom.eaten = false
         
-        print(nom!.servingSizeGrams)
-        
         planMgr.addNom(newNom)
         
         masterViewController!.scrollToIndex(1)

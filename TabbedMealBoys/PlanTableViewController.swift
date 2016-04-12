@@ -24,7 +24,7 @@ class PlanTableViewController: UITableViewController {
             self.tableView.reloadData()
         }
         
-        self.tableView.contentInset = UIEdgeInsetsMake(30, 0, 0, 0)
+        self.tableView.contentInset = UIEdgeInsetsMake(60, 0, 0, 0)
         
         self.tableView.registerNib(UINib(nibName: "PlanTableViewCell", bundle: nil), forCellReuseIdentifier: "PlanTableViewCell")
         
@@ -33,6 +33,18 @@ class PlanTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        self.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, parentViewController!.view.frame.width, parentViewController!.view.frame.height)
+        
+        let label = UILabel(frame: CGRectMake(0, 0, self.view.frame.width, 70))
+        label.center = CGPointMake(self.view.frame.width/2, -20)
+        label.textAlignment = NSTextAlignment.Center
+        label.text = "DAY PLAN"
+        label.font = label.font.fontWithSize(30)
+        label.textColor = UIColor.whiteColor()
+        self.view.addSubview(label)
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,11 +70,14 @@ class PlanTableViewController: UITableViewController {
         
         let nom = planMgr.plan!.noms[indexPath.row]
         
+        cell.planNom = nom
         cell.nameText.text = nom.name
         cell.proteinText.text = "\(nom.servingProtein)"
         cell.carbsText.text = "\(nom.servingCarbs)"
         cell.fatText.text = "\(nom.servingFat)"
 
+        cell.setup()
+        
         return cell
     }
 

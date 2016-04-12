@@ -22,7 +22,7 @@ class NomsTableViewController: UITableViewController {
         let nomsQuery = realm.objects(Nom)
         noms = nomsQuery
         
-        self.tableView.contentInset = UIEdgeInsetsMake(30, 0, 0, 0)
+        self.tableView.contentInset = UIEdgeInsetsMake(60, 0, 0, 0)
         
         updateList = realm.objects(Nom).addNotificationBlock {
             results, error in
@@ -41,6 +41,14 @@ class NomsTableViewController: UITableViewController {
     
     override func viewDidLayoutSubviews() {
         self.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, parentViewController!.view.frame.width, parentViewController!.view.frame.height)
+        
+        let label = UILabel(frame: CGRectMake(0, 0, self.view.frame.width, 70))
+        label.center = CGPointMake(self.view.frame.width/2, -20)
+        label.textAlignment = NSTextAlignment.Center
+        label.text = "NOMS"
+        label.font = label.font.fontWithSize(30)
+        label.textColor = UIColor.whiteColor()
+        self.view.addSubview(label)
     }
 
     override func didReceiveMemoryWarning() {
@@ -70,8 +78,7 @@ class NomsTableViewController: UITableViewController {
         
         let nom = noms![indexPath.row]
         
-        cell.nameText.text = nom.name
-        cell.caloriesText.text = "\(nom.servingCalories)"
+        cell.nameText.text = nom.name        
         cell.proteinText.text = "\(nom.servingProtein)"
         cell.carbText.text = "\(nom.servingCarbs)"
         cell.fatText.text = "\(nom.servingFat)"
