@@ -13,17 +13,31 @@ class PlanTableViewController: UITableViewController {
     
     var updateList: NotificationToken?
     let headerTitles = ["Breakfast", "Lunch", "Dinner", "Pre-Workout", "Post-Workout"]
+    var data: [[PlanNom]] = [[], [], [], [], []]
     
     // Set up data by creating a 2-D array. And a notification that updates it every time the collection is updated. Could make a use case for the presentation
+    
+    func loadData() {
+        let planNoms = planMgr.plan!.noms
+        
+        for i in 0..<planNoms.count {
+            let current = planNoms[i]
+            
+            data[current.section].append(current)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let realm = try! Realm()
         
+        self.loadData()
+        
         updateList = realm.objects(Plan).addNotificationBlock{
             results, error in
             
+            self.loadData()
             self.tableView.reloadData()
         }    
         
@@ -60,8 +74,6 @@ class PlanTableViewController: UITableViewController {
         let realm = try! Realm()
         let count = realm.objects(PlanNom).filter("section = \(section)");
         
-        print("section = " + headerTitles[section] + " count = \(count.count)")
-        
         return count.count
     }
     
@@ -78,7 +90,8 @@ class PlanTableViewController: UITableViewController {
         let cellIdentifier = "PlanTableViewCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! PlanTableViewCell
         
-        let nom = planMgr.plan!.noms[indexPath.row]
+        let nom = data[indexPath.section][indexPath.row]
+        
         
         cell.planNom = nom
         cell.nameText.text = nom.name
@@ -87,8 +100,6 @@ class PlanTableViewController: UITableViewController {
         cell.fatText.text = "\(nom.servingFat)"
 
         cell.setup()
-        
-        print (planMgr.plan!.noms.count)
         
         return cell
     }

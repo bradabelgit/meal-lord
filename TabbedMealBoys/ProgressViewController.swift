@@ -63,15 +63,9 @@ class ProgressViewController: UIViewController {
                 EatenCarb = EatenCarb + Double(task.servingCarbs)
                 EatenPro = EatenPro + Double(task.servingProtein)
                 
-                print ("pro \(task.servingProtein)")
-                print ("carbs \(task.servingCarbs)")
-                print ("fat \(task.servingFat)")
-                
                 EatenCal = EatenCal + Double(task.servingProtein * 4) + Double(task.servingCarbs * 4) + Double(task.servingFat * 9)
             }
         }
-        
-        print ("eaten cal \(EatenCal)")
         
         let profileFat = self.profile!.goalFat.value != nil ? self.profile!.goalFat.value! : 0
         let profilePro = self.profile!.goalProtein.value != nil ? self.profile!.goalProtein.value! : 0
