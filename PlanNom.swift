@@ -16,5 +16,6 @@ class PlanNom: Object {
     dynamic var servingProtein = 0
     dynamic var servingFat = 0
     dynamic var servingCarbs = 0
+    dynamic var section = 0
     dynamic var eaten = false
 }

@@ -12,6 +12,7 @@ import RealmSwift
 class PlanTableViewController: UITableViewController {
     
     var updateList: NotificationToken?
+    let headerTitles = ["Breakfast", "Lunch", "Dinner", "Pre-Workout", "Post-Workout"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,29 +23,23 @@ class PlanTableViewController: UITableViewController {
             results, error in
             
             self.tableView.reloadData()
-        }
+        }    
         
-        self.tableView.contentInset = UIEdgeInsetsMake(60, 0, 0, 0)
+        let nib = UINib(nibName: "TableSectionHeader", bundle: nil)
+        tableView.registerNib(nib, forHeaderFooterViewReuseIdentifier: "TableSectionHeader")
         
         self.tableView.registerNib(UINib(nibName: "PlanTableViewCell", bundle: nil), forCellReuseIdentifier: "PlanTableViewCell")
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let header: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView //recast your view as a UITableViewHeaderFooterView
+        header.contentView.backgroundColor = UIColor(red: 0/255, green: 181/255, blue: 229/255, alpha: 1.0) //make the background color light blue
+        header.textLabel!.textColor = UIColor.whiteColor() //make the text white
+        header.alpha = 1 //make the header transparent
     }
     
     override func viewDidLayoutSubviews() {
         self.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, parentViewController!.view.frame.width, parentViewController!.view.frame.height)
-        
-        let label = UILabel(frame: CGRectMake(0, 0, self.view.frame.width, 70))
-        label.center = CGPointMake(self.view.frame.width/2, -20)
-        label.textAlignment = NSTextAlignment.Center
-        label.text = "DAY PLAN"
-        label.font = label.font.fontWithSize(30)
-        label.textColor = UIColor.whiteColor()
-        self.view.addSubview(label)
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,11 +51,24 @@ class PlanTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 5
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return planMgr.plan!.noms.count
+        let realm = try! Realm()
+        
+        var count = realm.objects(PlanNom).filter("section = \(section)");
+        print("section = \(section) count = \(count.count)")
+        
+        return count.count
+    }
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section < headerTitles.count {
+            return headerTitles[section]
+        }
+        
+        return nil
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
