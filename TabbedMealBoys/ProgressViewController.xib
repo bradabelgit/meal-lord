@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProgressViewController" customModule="TabbedMealBoys" customModuleProvider="target">
@@ -27,12 +28,6 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="PROGRESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGy-bj-UyH">
-                    <rect key="frame" x="197" y="17" width="206" height="40"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FYL-AC-8OM">
                     <rect key="frame" x="132" y="134" width="337" height="331"/>
                     <subviews>
@@ -208,13 +203,29 @@
                         </view>
                     </subviews>
                 </stackView>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tf0-iF-zko">
+                    <rect key="frame" x="180" y="0.0" width="240" height="128"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="PROGRESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGy-bj-UyH">
+                            <rect key="frame" x="17" y="44" width="206" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="qGy-bj-UyH" firstAttribute="centerY" secondItem="tf0-iF-zko" secondAttribute="centerY" id="eA0-1W-xkI"/>
+                        <constraint firstItem="qGy-bj-UyH" firstAttribute="centerX" secondItem="tf0-iF-zko" secondAttribute="centerX" id="uIm-Oj-oXy"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
             <constraints>
-                <constraint firstItem="qGy-bj-UyH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Dq1-dF-60K"/>
-                <constraint firstItem="FYL-AC-8OM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XKF-Le-PJA"/>
-                <constraint firstItem="qGy-bj-UyH" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="fn9-PN-b97"/>
-                <constraint firstItem="FYL-AC-8OM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="oab-en-BR0"/>
+                <constraint firstItem="tf0-iF-zko" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.125" id="5DQ-xO-puv"/>
+                <constraint firstItem="tf0-iF-zko" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="E6f-bq-r3I"/>
+                <constraint firstItem="FYL-AC-8OM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="N4k-k0-tlL"/>
+                <constraint firstItem="FYL-AC-8OM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="v3V-jN-jxS"/>
+                <constraint firstItem="tf0-iF-zko" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zPK-cM-4I3"/>
             </constraints>
         </view>
     </objects>

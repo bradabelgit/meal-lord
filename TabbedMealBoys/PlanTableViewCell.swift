@@ -38,6 +38,7 @@ class PlanTableViewCell: UITableViewCell {
     @IBOutlet weak var proteinText: UILabel!
     @IBOutlet weak var fatText: UILabel!
     @IBOutlet weak var carbsText: UILabel!
+    @IBOutlet weak var gramsText: UILabel!
     @IBOutlet weak var eatButton: UIButton!
 
     var planNom: PlanNom?

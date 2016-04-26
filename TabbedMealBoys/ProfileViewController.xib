@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="TabbedMealBoys" customModuleProvider="target">
@@ -23,14 +24,14 @@
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROFILE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyS-xE-Z9W">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="NAME" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LT0-AW-PmJ" customClass="KaedeTextField" customModule="TextFieldEffects">
-                            <rect key="frame" x="0.0" y="100" width="600" height="100"/>
+                            <rect key="frame" x="0.0" y="75" width="600" height="113"/>
                             <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                             <textInputTraits key="textInputTraits"/>
@@ -47,7 +48,7 @@
                             </userDefinedRuntimeAttributes>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PROTEIN (g)" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pzo-yS-Tdi" customClass="KaedeTextField" customModule="TextFieldEffects">
-                            <rect key="frame" x="0.0" y="200" width="600" height="100"/>
+                            <rect key="frame" x="0.0" y="188" width="600" height="112"/>
                             <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                             <textInputTraits key="textInputTraits"/>
@@ -64,7 +65,7 @@
                             </userDefinedRuntimeAttributes>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="FAT (g)" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5dF-Ev-N1H" customClass="KaedeTextField" customModule="TextFieldEffects">
-                            <rect key="frame" x="0.0" y="300" width="600" height="100"/>
+                            <rect key="frame" x="0.0" y="300" width="600" height="113"/>
                             <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                             <textInputTraits key="textInputTraits"/>
@@ -81,7 +82,7 @@
                             </userDefinedRuntimeAttributes>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CARBS (g)" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ifm-A6-O6P" customClass="KaedeTextField" customModule="TextFieldEffects">
-                            <rect key="frame" x="0.0" y="400" width="600" height="100"/>
+                            <rect key="frame" x="0.0" y="413" width="600" height="112"/>
                             <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                             <textInputTraits key="textInputTraits"/>
@@ -98,7 +99,7 @@
                             </userDefinedRuntimeAttributes>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKY-Ga-VXt">
-                            <rect key="frame" x="0.0" y="500" width="600" height="100"/>
+                            <rect key="frame" x="0.0" y="525" width="600" height="75"/>
                             <color key="backgroundColor" red="0.076632730662822723" green="0.018642935901880264" blue="0.065073736011981964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
                             <state key="normal" title="UPDATE">
@@ -110,11 +111,11 @@
                         </button>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="Ifm-A6-O6P" firstAttribute="height" secondItem="5dF-Ev-N1H" secondAttribute="height" id="ATe-X9-XWF"/>
-                        <constraint firstItem="LT0-AW-PmJ" firstAttribute="height" secondItem="WyS-xE-Z9W" secondAttribute="height" id="HSN-MF-djr"/>
-                        <constraint firstItem="aKY-Ga-VXt" firstAttribute="height" secondItem="Ifm-A6-O6P" secondAttribute="height" id="MHw-ho-abd"/>
-                        <constraint firstItem="5dF-Ev-N1H" firstAttribute="height" secondItem="pzo-yS-Tdi" secondAttribute="height" id="wdN-Fg-Qtl"/>
-                        <constraint firstItem="LT0-AW-PmJ" firstAttribute="height" secondItem="pzo-yS-Tdi" secondAttribute="height" id="zgV-Jo-dGG"/>
+                        <constraint firstItem="pzo-yS-Tdi" firstAttribute="height" secondItem="LT0-AW-PmJ" secondAttribute="height" id="OQc-rj-y0L"/>
+                        <constraint firstItem="WyS-xE-Z9W" firstAttribute="height" secondItem="62A-Px-NVk" secondAttribute="height" multiplier="0.125" id="SQj-iN-Rpc"/>
+                        <constraint firstItem="5dF-Ev-N1H" firstAttribute="height" secondItem="pzo-yS-Tdi" secondAttribute="height" id="SWb-je-J9H"/>
+                        <constraint firstItem="Ifm-A6-O6P" firstAttribute="height" secondItem="5dF-Ev-N1H" secondAttribute="height" id="fQK-9e-Wjs"/>
+                        <constraint firstItem="aKY-Ga-VXt" firstAttribute="height" secondItem="WyS-xE-Z9W" secondAttribute="height" id="nEt-cI-niD"/>
                     </constraints>
                 </stackView>
             </subviews>

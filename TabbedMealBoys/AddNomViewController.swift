@@ -9,6 +9,7 @@
 import UIKit
 import TextFieldEffects
 import RealmSwift
+import SCLAlertView
 
 class AddNomViewController: UIViewController {
 
@@ -56,5 +57,8 @@ class AddNomViewController: UIViewController {
         try! realm.write {
             realm.add(newNom)
         }
+        
+        let alert = SCLAlertView()
+        alert.showTitle(newNom.name + " added", subTitle: "", style: .Notice, colorStyle: 0x99E87E)
     }    
 }

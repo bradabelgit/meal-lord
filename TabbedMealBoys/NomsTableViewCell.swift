@@ -12,10 +12,10 @@ import SCLAlertView
 class NomsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var nameText: UILabel!
-    @IBOutlet weak var caloriesText: UILabel!
     @IBOutlet weak var proteinText: UILabel!
     @IBOutlet weak var fatText: UILabel!
     @IBOutlet weak var carbText: UILabel!
+    @IBOutlet weak var gramText: UILabel!
     
     var nom: Nom?
 
@@ -59,8 +59,6 @@ class NomsTableViewCell: UITableViewCell {
         }
         
         alert.showTitle(nom!.name, subTitle: "", style: .Edit, colorStyle: 0x99E87E)
-        
-        masterViewController!.scrollToIndex(1)
     }
     
     func addNewNom(servingGrams: Double, section: Int) {

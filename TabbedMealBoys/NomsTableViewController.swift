@@ -22,8 +22,6 @@ class NomsTableViewController: UITableViewController {
         let nomsQuery = realm.objects(Nom)
         noms = nomsQuery
         
-        self.tableView.contentInset = UIEdgeInsetsMake(60, 0, 0, 0)
-        
         updateList = realm.objects(Nom).addNotificationBlock {
             results, error in
             
@@ -36,8 +34,10 @@ class NomsTableViewController: UITableViewController {
     override func viewDidLayoutSubviews() {
         self.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, parentViewController!.view.frame.width, parentViewController!.view.frame.height)
         
-        let label = UILabel(frame: CGRectMake(0, 0, self.view.frame.width, 70))
-        label.center = CGPointMake(self.view.frame.width/2, -20)
+        self.tableView.contentInset = UIEdgeInsetsMake(self.view.frame.height * 0.125, 0, 0, 0)
+        
+        let label = UILabel(frame: CGRectMake(0, -200, self.view.frame.width, self.view.frame.height * 0.125))
+        label.center = CGPointMake(self.view.frame.width/2, -((self.view.frame.height * 0.125)/2))
         label.textAlignment = NSTextAlignment.Center
         label.text = "NOMS"
         label.font = label.font.fontWithSize(30)
@@ -70,9 +70,10 @@ class NomsTableViewController: UITableViewController {
         let nom = noms![indexPath.row]                        
         
         cell.nameText.text = nom.name        
-        cell.proteinText.text = "\(nom.servingProtein)"
-        cell.carbText.text = "\(nom.servingCarbs)"
-        cell.fatText.text = "\(nom.servingFat)"
+        cell.proteinText.text = "\(Int(nom.servingProtein))"
+        cell.carbText.text = "\(Int(nom.servingCarbs))"
+        cell.fatText.text = "\(Int(nom.servingFat))"
+        cell.gramText.text = "/\(Int(nom.servingSizeGrams))"
         cell.nom = nom
         
         cell.masterViewController = parentViewController as? MasterViewController

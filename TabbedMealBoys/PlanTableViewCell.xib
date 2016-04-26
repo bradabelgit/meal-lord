@@ -43,8 +43,14 @@
                                 <color key="textColor" red="0.60784313729999995" green="1" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4r-1T-1mu">
+                                <rect key="frame" x="285" y="0.0" width="38" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrU-B0-A4m">
-                                <rect key="frame" x="285" y="0.0" width="90" height="43"/>
+                                <rect key="frame" x="323" y="0.0" width="52" height="43"/>
                                 <color key="backgroundColor" red="0.58823529409999997" green="0.91764705879999997" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="+">
@@ -57,6 +63,7 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="HNJ-Xr-nvZ" firstAttribute="width" secondItem="2ot-8x-P0f" secondAttribute="width" id="HM2-Oe-ML6"/>
+                            <constraint firstItem="p4r-1T-1mu" firstAttribute="width" secondItem="HNJ-Xr-nvZ" secondAttribute="height" multiplier="38:43" id="V7Q-g7-eEr"/>
                             <constraint firstItem="BPG-dn-jtd" firstAttribute="width" secondItem="YEc-5Z-tRF" secondAttribute="height" multiplier="3:1" id="WTW-a0-Fkp"/>
                             <constraint firstItem="YEc-5Z-tRF" firstAttribute="width" secondItem="HNJ-Xr-nvZ" secondAttribute="width" id="bkH-iv-yY9"/>
                             <constraint firstItem="2ot-8x-P0f" firstAttribute="width" secondItem="PrU-B0-A4m" secondAttribute="height" multiplier="12:10" id="qDQ-t1-DXD"/>
@@ -75,6 +82,7 @@
                 <outlet property="carbsText" destination="2ot-8x-P0f" id="f13-Id-swe"/>
                 <outlet property="eatButton" destination="PrU-B0-A4m" id="UV4-sU-bXW"/>
                 <outlet property="fatText" destination="HNJ-Xr-nvZ" id="KSR-Qh-38C"/>
+                <outlet property="gramsText" destination="p4r-1T-1mu" id="h0C-Z9-WG1"/>
                 <outlet property="nameText" destination="BPG-dn-jtd" id="VSF-r3-h0R"/>
                 <outlet property="proteinText" destination="YEc-5Z-tRF" id="Ok5-3b-kse"/>
             </connections>

@@ -608,7 +608,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4915E47AD2D7E3AD840902A5 /* Pods-TabbedMealBoys.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TabbedMealBoys/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MealPlanner.TabbedMealBoys;
@@ -621,7 +620,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 590AE4310B48FA37AE330FD4 /* Pods-TabbedMealBoys.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TabbedMealBoys/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MealPlanner.TabbedMealBoys;

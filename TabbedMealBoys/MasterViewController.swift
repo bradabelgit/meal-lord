@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MasterViewController: UIViewController {
+class MasterViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -27,13 +27,7 @@ class MasterViewController: UIViewController {
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        
-        //LightContent
         return UIStatusBarStyle.LightContent
-        
-        //Default
-        //return UIStatusBarStyle.Default
-        
     }
     
     override func viewDidLoad() {
@@ -43,33 +37,34 @@ class MasterViewController: UIViewController {
         pages.append(PlanTableViewController())
         pages.append(NomsTableViewController())
         pages.append(AddNomViewController())
-        pages.append(ProfileViewController())
+        pages.append(ProfileViewController())                
         
         for (index, page) in pages.enumerate() {
             attachSlide(page, slideNumber: index + 1)
         }
         
         self.scrollView.contentSize = CGSizeMake(self.view.frame.width * CGFloat(pages.count), self.view.frame.height)
+        
+        let button = UIButton()
+        button.setBackgroundImage(UIImage(named: "trophy"), forState: .Normal)        
+        button.frame = CGRectMake(self.view.frame.width - 60, self.view.frame.height - 60, 30, 30)
+        button.addTarget(self, action: #selector(MasterViewController.backToProgress), forControlEvents: .TouchUpInside)
+        self.view.addSubview(button)
+        
+        self.scrollView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func scrollToIndex(index: Int) {        
         UIView.animateWithDuration(0.25, delay: 0, options: UIViewAnimationOptions.CurveLinear, animations: {
             self.scrollView.contentOffset = CGPoint(x: self.view.frame.width * CGFloat(index), y: 0)
         }, completion: nil)
-    }    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
+    
+    func backToProgress() {
+        scrollToIndex(0)
+    }
 }

@@ -18,6 +18,8 @@ class PlanTableViewController: UITableViewController {
     // Set up data by creating a 2-D array. And a notification that updates it every time the collection is updated. Could make a use case for the presentation
     
     func loadData() {
+        data = [[], [], [], [], []]
+        
         let planNoms = planMgr.plan!.noms
         
         for i in 0..<planNoms.count {
@@ -34,7 +36,7 @@ class PlanTableViewController: UITableViewController {
         
         self.loadData()
         
-        updateList = realm.objects(Plan).addNotificationBlock{
+        updateList = realm.objects(PlanNom).addNotificationBlock{
             results, error in
             
             self.loadData()
@@ -56,6 +58,7 @@ class PlanTableViewController: UITableViewController {
     
     override func viewDidLayoutSubviews() {
         self.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, parentViewController!.view.frame.width, parentViewController!.view.frame.height)
+        self.tableView.contentInset = UIEdgeInsetsMake(UIApplication.sharedApplication().statusBarFrame.size.height, 0, 0, 0)
     }
 
     override func didReceiveMemoryWarning() {
@@ -92,12 +95,12 @@ class PlanTableViewController: UITableViewController {
         
         let nom = data[indexPath.section][indexPath.row]
         
-        
         cell.planNom = nom
         cell.nameText.text = nom.name
-        cell.proteinText.text = "\(nom.servingProtein)"
-        cell.carbsText.text = "\(nom.servingCarbs)"
-        cell.fatText.text = "\(nom.servingFat)"
+        cell.proteinText.text = "\(Int(nom.servingProtein))"
+        cell.carbsText.text = "\(Int(nom.servingCarbs))"
+        cell.fatText.text = "\(Int(nom.servingFat))"
+        cell.gramsText.text = "/\(Int(nom.servingSizeGrams))"
 
         cell.setup()
         

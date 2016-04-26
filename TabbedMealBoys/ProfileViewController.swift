@@ -9,6 +9,7 @@
 import UIKit
 import RealmSwift
 import TextFieldEffects
+import SCLAlertView
 
 class ProfileViewController: UIViewController {
     
@@ -25,7 +26,7 @@ class ProfileViewController: UIViewController {
         
         loadProfile()
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -74,6 +75,11 @@ class ProfileViewController: UIViewController {
             profile!.goalCarbs.value = Int(carbsText.text!)
         }
         
+        let alert = SCLAlertView()
+        alert.showTitle("Profile Updated!", subTitle: "", style: .Notice, colorStyle: 0x99E87E)
+    }
+    
+    @IBAction func toProgress(sender: UIButton) {
         let parentController: MasterViewController = parentViewController as! MasterViewController
         
         parentController.scrollToIndex(0)
